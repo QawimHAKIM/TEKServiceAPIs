@@ -1,0 +1,1831 @@
+14:22:48.089 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:22:48.990 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:22:49.044 [main] ERROR com.intuit.karate - classpath:features/TokenGenerator.feature:6
+* path "/auth/login
+js failed:
+>>>>
+01: "/auth/login
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:12 Missing close quote
+"/auth/login
+            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:379)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+classpath:features/TokenGenerator.feature:6
+14:23:09.739 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:23:10.521 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:23:10.565 [main] ERROR com.intuit.karate - classpath:features/TokenGenerator.feature:6
+* path "/auth/login
+js failed:
+>>>>
+01: "/auth/login
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:12 Missing close quote
+"/auth/login
+            ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.path(ScenarioEngine.java:379)
+- com.intuit.karate.ScenarioActions.path(ScenarioActions.java:82)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+classpath:features/TokenGenerator.feature:6
+14:23:28.876 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:23:29.627 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:23:30.097 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+14:23:30.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 582
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 18:23:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-JdG6dOfPqbfzwTk+ApMFPYuJuAI"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5NTgxMX0.c0ffWw34XfGl8kX7pHcMgz47X0WrAcxHPLivGM_P_mw"}
+
+14:23:30.685 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5NTgxMX0.c0ffWw34XfGl8kX7pHcMgz47X0WrAcxHPLivGM_P_mw"
+}
+ 
+14:27:44.457 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:27:45.144 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:27:45.505 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+14:27:46.078 [main] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 18:27:47 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-5t19ghJcv/om2A07VLGBnVKl6M8"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5NjA2N30.8YBsnB5vgtQeRmvt9pogtheiMhxrAkuGULhJm1VLt40"}
+
+14:27:46.084 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5NjA2N30.8YBsnB5vgtQeRmvt9pogtheiMhxrAkuGULhJm1VLt40"
+}
+ 
+14:27:46.089 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/category
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5NjA2N30.8YBsnB5vgtQeRmvt9pogtheiMhxrAkuGULhJm1VLt40
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:27:46.282 [main] DEBUG com.intuit.karate - response time in milliseconds: 193
+1 < 200
+1 < Content-Length: 656
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 18:27:47 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"290-1QZQ0KRKF2pmzUufITgbMNO97pU"
+1 < X-Powered-By: Express
+{"1":{"title":"Electronics","level":1,"id":1,"children":[{"id":6,"title":"TV & Video"},{"id":7,"title":"Video Games"}]},"2":{"title":"Computers","level":1,"id":2,"children":[{"id":8,"title":"Accessories"},{"id":9,"title":"Networking"}]},"3":{"title":"Smart Home","level":1,"id":3,"children":[{"id":10,"title":"Smart Home Lightning"},{"id":11,"title":"Plugs and Outlets"}]},"4":{"title":"Sports","level":1,"id":4,"children":[{"id":12,"title":"Athletic Clothing"},{"id":13,"title":"Exercise & Fitness"}]},"5":{"title":"Automative","level":1,"id":5,"children":[{"id":14,"title":"Automative Parts & Accessories"},{"id":15,"title":"MotorCycle & Powersports"}]}}
+
+14:27:46.286 [main] INFO  com.intuit.karate - [print] {
+  "1": {
+    "title": "Electronics",
+    "level": 1,
+    "id": 1,
+    "children": [
+      {
+        "id": 6,
+        "title": "TV & Video"
+      },
+      {
+        "id": 7,
+        "title": "Video Games"
+      }
+    ]
+  },
+  "2": {
+    "title": "Computers",
+    "level": 1,
+    "id": 2,
+    "children": [
+      {
+        "id": 8,
+        "title": "Accessories"
+      },
+      {
+        "id": 9,
+        "title": "Networking"
+      }
+    ]
+  },
+  "3": {
+    "title": "Smart Home",
+    "level": 1,
+    "id": 3,
+    "children": [
+      {
+        "id": 10,
+        "title": "Smart Home Lightning"
+      },
+      {
+        "id": 11,
+        "title": "Plugs and Outlets"
+      }
+    ]
+  },
+  "4": {
+    "title": "Sports",
+    "level": 1,
+    "id": 4,
+    "children": [
+      {
+        "id": 12,
+        "title": "Athletic Clothing"
+      },
+      {
+        "id": 13,
+        "title": "Exercise & Fitness"
+      }
+    ]
+  },
+  "5": {
+    "title": "Automative",
+    "level": 1,
+    "id": 5,
+    "children": [
+      {
+        "id": 14,
+        "title": "Automative Parts & Accessories"
+      },
+      {
+        "id": 15,
+        "title": "MotorCycle & Powersports"
+      }
+    ]
+  }
+}
+ 
+15:00:58.959 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:00:59.733 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:01:00.157 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:01:00.701 [main] DEBUG com.intuit.karate - response time in milliseconds: 541
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:01:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-NWLz8Rm4dHzDTYsbYMAKdazf0Aw"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA2MX0.BaJJbFeh9_tBXCFB6T_okNTpai8wz-5EZRnYmP4c_aU"}
+
+15:01:00.705 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA2MX0.BaJJbFeh9_tBXCFB6T_okNTpai8wz-5EZRnYmP4c_aU"
+}
+ 
+15:01:00.713 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA2MX0.BaJJbFeh9_tBXCFB6T_okNTpai8wz-5EZRnYmP4c_aU
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:01:00.911 [main] DEBUG com.intuit.karate - response time in milliseconds: 198
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:01:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:01:00.916 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:16
+* match buyerId = response.buyerId
+syntax error, expected '==' for match
+classpath:features/ShoppingCart.feature:16
+15:01:18.293 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:01:19.050 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:01:19.399 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:01:19.965 [main] DEBUG com.intuit.karate - response time in milliseconds: 563
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:01:20 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-NUFqDEHbLMZDp2xxna7igdciMHg"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA4MH0.XvPWIe22UFFzD19wPdWuNWsO0KI9WHB6eCx6JwNQCKY"}
+
+15:01:19.970 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA4MH0.XvPWIe22UFFzD19wPdWuNWsO0KI9WHB6eCx6JwNQCKY"
+}
+ 
+15:01:19.978 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODA4MH0.XvPWIe22UFFzD19wPdWuNWsO0KI9WHB6eCx6JwNQCKY
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:01:20.170 [main] DEBUG com.intuit.karate - response time in milliseconds: 192
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:01:21 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:01:20.191 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:16
+* match buyerId == response.buyerId
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:16
+15:02:44.406 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:02:45.189 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:02:45.565 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:02:46.095 [main] DEBUG com.intuit.karate - response time in milliseconds: 528
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:02:47 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-zwMJjZg76guRvU8h6LCdY9Yrndo"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODE2N30.en1H1ICUTr7461FG5YaNxJblqAbZX2RMHFl1kGvXiXE"}
+
+15:02:46.102 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODE2N30.en1H1ICUTr7461FG5YaNxJblqAbZX2RMHFl1kGvXiXE"
+}
+ 
+15:02:46.110 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODE2N30.en1H1ICUTr7461FG5YaNxJblqAbZX2RMHFl1kGvXiXE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:02:46.319 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:02:47 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:02:46.338 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match buyerId == responseId
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:17
+15:03:25.028 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:03:25.846 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:03:26.264 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:03:26.806 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:03:27 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-BqvOeRVHfR/8aLt1iV6H2j3O8iU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODIwN30.hASvfKlWJjJew8xooZu1kRxcmHFwDO4DU05z2KCdehg"}
+
+15:03:26.812 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODIwN30.hASvfKlWJjJew8xooZu1kRxcmHFwDO4DU05z2KCdehg"
+}
+ 
+15:03:26.817 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODIwN30.hASvfKlWJjJew8xooZu1kRxcmHFwDO4DU05z2KCdehg
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:03:26.992 [main] DEBUG com.intuit.karate - response time in milliseconds: 174
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:03:27 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:03:27.006 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match buyerId == buyerID
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:17
+15:04:03.185 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:04:03.947 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:04:04.314 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:04:04.827 [main] DEBUG com.intuit.karate - response time in milliseconds: 512
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:04:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-LcmZVNzIEHagCNmNs0YQIQ0szrs"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODI0NX0.ps7f5rjoKa8uKF0dvL51FOhZRrF1NKpvehjn4GWpxI8"}
+
+15:04:04.833 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODI0NX0.ps7f5rjoKa8uKF0dvL51FOhZRrF1NKpvehjn4GWpxI8"
+}
+ 
+15:04:04.839 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODI0NX0.ps7f5rjoKa8uKF0dvL51FOhZRrF1NKpvehjn4GWpxI8
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:04:05.040 [main] DEBUG com.intuit.karate - response time in milliseconds: 200
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:04:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:04:05.053 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:16
+* match buyerId == response.id
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:16
+15:06:02.501 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:06:03.209 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:03.557 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:06:04.059 [main] DEBUG com.intuit.karate - response time in milliseconds: 501
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:06:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-tHmQA6d0Jgo0DXV9HsdVdpNZNpA"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM2NX0.WjraMs_mUpYCSGxgl_XxWpWXy0jCmNRKcnQhVWg4ARg"}
+
+15:06:04.065 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM2NX0.WjraMs_mUpYCSGxgl_XxWpWXy0jCmNRKcnQhVWg4ARg"
+}
+ 
+15:06:04.071 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM2NX0.WjraMs_mUpYCSGxgl_XxWpWXy0jCmNRKcnQhVWg4ARg
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:06:04.248 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:06:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:06:04.261 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:16
+* match buyerId == buyerID
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:16
+15:06:19.737 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:06:20.437 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:20.777 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:06:21.300 [main] DEBUG com.intuit.karate - response time in milliseconds: 519
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:06:22 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-iURH2ahr/Cg9fvXYfszcC733lJk"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM4Mn0.uLypTVEtvN8LxNfosNYNPwLzHPe09bUz47RdpYExCaY"}
+
+15:06:21.312 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM4Mn0.uLypTVEtvN8LxNfosNYNPwLzHPe09bUz47RdpYExCaY"
+}
+ 
+15:06:21.318 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODM4Mn0.uLypTVEtvN8LxNfosNYNPwLzHPe09bUz47RdpYExCaY
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:06:21.541 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:06:22 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:06:21.547 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 5545,
+    "productId": 7,
+    "price": 4498,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Sony HD TV ",
+    "productImageUrl": "/images/products/6_7.jpg"
+  },
+  {
+    "id": 5546,
+    "productId": 9,
+    "price": 129,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Toshiba V35 Series Smart Fire TV ",
+    "productImageUrl": "/images/products/6_9.jpg"
+  },
+  {
+    "id": 5547,
+    "productId": 12,
+    "price": 39.99,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Teenage Mutant Ninja Turtles Cowabunga Collection NSW",
+    "productImageUrl": "/images/products/7_2.jpg"
+  }
+]
+ 
+15:06:59.442 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:07:00.180 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:07:00.523 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:07:01.046 [main] DEBUG com.intuit.karate - response time in milliseconds: 520
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:07:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-hOUFmdp7kKwvcxPULhPDbxVZbK4"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODQyMX0.wl-aqhVXFmDCJbYHEHyqxWVhTmLXXNhcoCWCg5hdDsU"}
+
+15:07:01.054 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODQyMX0.wl-aqhVXFmDCJbYHEHyqxWVhTmLXXNhcoCWCg5hdDsU"
+}
+ 
+15:07:01.061 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODQyMX0.wl-aqhVXFmDCJbYHEHyqxWVhTmLXXNhcoCWCg5hdDsU
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:07:01.276 [main] DEBUG com.intuit.karate - response time in milliseconds: 215
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:07:02 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:07:01.295 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:16
+* match buyerID == response.buyerId
+match failed: EQUALS
+  $ | data types don't match (NUMBER:NULL)
+  3862
+  null
+
+classpath:features/ShoppingCart.feature:16
+15:08:28.410 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:08:29.091 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:08:29.445 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:08:30.030 [main] DEBUG com.intuit.karate - response time in milliseconds: 584
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:08:30 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-1Ot5IX53i6vz+ih9Vy7cm01O1Pw"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODUxMH0.sCm2KY-N0iQbSlQglTsmXyOG3E8f-vj450S4QSeJ5ZA"}
+
+15:08:30.037 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODUxMH0.sCm2KY-N0iQbSlQglTsmXyOG3E8f-vj450S4QSeJ5ZA"
+}
+ 
+15:08:30.043 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODUxMH0.sCm2KY-N0iQbSlQglTsmXyOG3E8f-vj450S4QSeJ5ZA
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:08:30.254 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:08:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:08:30.267 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match id == buyerID
+match failed: EQUALS
+  $ | data types don't match (NULL:NUMBER)
+  null
+  3862
+
+classpath:features/ShoppingCart.feature:17
+15:08:58.773 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:08:59.471 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:08:59.831 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:09:00.411 [main] DEBUG com.intuit.karate - response time in milliseconds: 578
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-FwqVy3IFA7EOdjxWNw/uJb64h3E"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU0MX0.8SNSyrhcvw7ic4ru4OURN2WvcWxkQrpPa3fSju1d-Q4"}
+
+15:09:00.418 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU0MX0.8SNSyrhcvw7ic4ru4OURN2WvcWxkQrpPa3fSju1d-Q4"
+}
+ 
+15:09:00.424 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU0MX0.8SNSyrhcvw7ic4ru4OURN2WvcWxkQrpPa3fSju1d-Q4
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:00.621 [main] DEBUG com.intuit.karate - response time in milliseconds: 197
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:09:00.639 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match id == 3862
+match failed: EQUALS
+  $ | data types don't match (NULL:NUMBER)
+  null
+  3862
+
+classpath:features/ShoppingCart.feature:17
+15:09:33.940 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:09:34.631 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:09:34.981 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:09:35.496 [main] DEBUG com.intuit.karate - response time in milliseconds: 514
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:36 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-Z4eYv49OMLnSrFfjBJ3cNZapXSM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU3Nn0.yJq-BBDP_TJMUXdH-EMCjdljo1HtgB8EIVEsLLdBAmc"}
+
+15:09:35.503 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU3Nn0.yJq-BBDP_TJMUXdH-EMCjdljo1HtgB8EIVEsLLdBAmc"
+}
+ 
+15:09:35.509 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU3Nn0.yJq-BBDP_TJMUXdH-EMCjdljo1HtgB8EIVEsLLdBAmc
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:35.720 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:36 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:09:35.733 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match buyerId == 3862
+js failed:
+>>>>
+01: buyerId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "buyerId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:17
+15:09:51.113 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:09:51.818 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:09:52.193 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:09:52.684 [main] DEBUG com.intuit.karate - response time in milliseconds: 489
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:53 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-HpcUePXl2xRKTfqhcbsdjtcGcyM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU5M30.lHH7TkX75DjejCMHZeBwLZ0gfPRtPRU4rJnPaCA5JUE"}
+
+15:09:52.689 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU5M30.lHH7TkX75DjejCMHZeBwLZ0gfPRtPRU4rJnPaCA5JUE"
+}
+ 
+15:09:52.695 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODU5M30.lHH7TkX75DjejCMHZeBwLZ0gfPRtPRU4rJnPaCA5JUE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:09:52.890 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:09:53 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:09:52.912 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 5545,
+    "productId": 7,
+    "price": 4498,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Sony HD TV ",
+    "productImageUrl": "/images/products/6_7.jpg"
+  },
+  {
+    "id": 5546,
+    "productId": 9,
+    "price": 129,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Toshiba V35 Series Smart Fire TV ",
+    "productImageUrl": "/images/products/6_9.jpg"
+  },
+  {
+    "id": 5547,
+    "productId": 12,
+    "price": 39.99,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Teenage Mutant Ninja Turtles Cowabunga Collection NSW",
+    "productImageUrl": "/images/products/7_2.jpg"
+  }
+]
+ 
+15:10:26.700 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:10:27.398 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:10:27.761 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:10:28.272 [main] DEBUG com.intuit.karate - response time in milliseconds: 510
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:10:29 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-zwLDqDLzBpc0shWWSuBbnKpxZZE"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODYyOX0.xi8W2uAp2Tdxu1C-8Aeo3VDp2GvL4o7bNt8rRW6MUCc"}
+
+15:10:28.276 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODYyOX0.xi8W2uAp2Tdxu1C-8Aeo3VDp2GvL4o7bNt8rRW6MUCc"
+}
+ 
+15:10:28.284 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODYyOX0.xi8W2uAp2Tdxu1C-8Aeo3VDp2GvL4o7bNt8rRW6MUCc
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:10:28.470 [main] DEBUG com.intuit.karate - response time in milliseconds: 186
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:10:29 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:10:28.483 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match buyerID == id
+match failed: EQUALS
+  $ | data types don't match (NUMBER:NULL)
+  3862
+  null
+
+classpath:features/ShoppingCart.feature:17
+15:12:04.396 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:04.399 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1679598724398
+15:12:05.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:05.443 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:12:05.952 [main] DEBUG com.intuit.karate - response time in milliseconds: 507
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:12:06 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-TtcY/QqLupkAYO93LSeD7jfM1HM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODcyNn0.HYx-UsVGAZ97Dm9a1A96URlg3vUKIN7oSS47ANehEIM"}
+
+15:12:05.956 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODcyNn0.HYx-UsVGAZ97Dm9a1A96URlg3vUKIN7oSS47ANehEIM"
+}
+ 
+15:12:06.432 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/features/TokenGenerator.feature
+15:12:40.324 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:12:41.007 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:12:41.373 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:12:41.887 [main] DEBUG com.intuit.karate - response time in milliseconds: 513
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:12:42 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-xf1sFdDY8FMGLVz6JzsJTduIwrY"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc2Mn0.0yIEjjy5LlvSjW_9xdvlTIoUqcNBfkzaeKw5I8k5zDw"}
+
+15:12:41.894 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc2Mn0.0yIEjjy5LlvSjW_9xdvlTIoUqcNBfkzaeKw5I8k5zDw"
+}
+ 
+15:12:41.900 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc2Mn0.0yIEjjy5LlvSjW_9xdvlTIoUqcNBfkzaeKw5I8k5zDw
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:12:42.131 [main] DEBUG com.intuit.karate - response time in milliseconds: 230
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:12:43 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:12:42.147 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:17
+* match buyerID == id
+match failed: EQUALS
+  $ | data types don't match (NUMBER:NULL)
+  3862
+  null
+
+classpath:features/ShoppingCart.feature:17
+15:13:00.393 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:13:01.106 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:13:01.462 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:13:02.003 [main] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:13:02 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-W84mO7g8Vlp1qdr99cNLjMrfeRg"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc4Mn0.zW4Q5UBYVFu_JonlSCV25eRHU62iHkBwLszl86mQ2CE"}
+
+15:13:02.009 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc4Mn0.zW4Q5UBYVFu_JonlSCV25eRHU62iHkBwLszl86mQ2CE"
+}
+ 
+15:13:02.015 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODc4Mn0.zW4Q5UBYVFu_JonlSCV25eRHU62iHkBwLszl86mQ2CE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:13:02.197 [main] DEBUG com.intuit.karate - response time in milliseconds: 182
+1 < 200
+1 < Content-Length: 486
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:13:03 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1e6-yFsC6tKq/HWQYnCNhDmuoKBVuUk"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"}]
+
+15:13:02.214 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 5545,
+    "productId": 7,
+    "price": 4498,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Sony HD TV ",
+    "productImageUrl": "/images/products/6_7.jpg"
+  },
+  {
+    "id": 5546,
+    "productId": 9,
+    "price": 129,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Toshiba V35 Series Smart Fire TV ",
+    "productImageUrl": "/images/products/6_9.jpg"
+  },
+  {
+    "id": 5547,
+    "productId": 12,
+    "price": 39.99,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Teenage Mutant Ninja Turtles Cowabunga Collection NSW",
+    "productImageUrl": "/images/products/7_2.jpg"
+  }
+]
+ 
+15:15:58.752 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:15:59.436 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:15:59.811 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:16:00.385 [main] DEBUG com.intuit.karate - response time in milliseconds: 573
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:16:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-oMRoPTm2YOwupwruz2auOvuaDmw"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODk2MX0.-MqBCxICoEgnzcZMfVsNpao2-qI0mgn2GjfHB9_aLQI"}
+
+15:16:00.391 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODk2MX0.-MqBCxICoEgnzcZMfVsNpao2-qI0mgn2GjfHB9_aLQI"
+}
+ 
+15:16:00.396 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/shopping-cart
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5ODk2MX0.-MqBCxICoEgnzcZMfVsNpao2-qI0mgn2GjfHB9_aLQI
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 28
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"productId":5,"quantity":3}
+
+15:16:00.592 [main] DEBUG com.intuit.karate - response time in milliseconds: 196
+1 < 200
+1 < Content-Length: 146
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:16:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"92-WuHiRBXGGXjYskFbsezec3dGPWY"
+1 < X-Powered-By: Express
+{"id":5553,"buyerId":3862,"productId":5,"quantity":3,"price":649.99,"updatedAt":"2023-03-23T19:16:01.528Z","createdAt":"2023-03-23T19:16:01.528Z"}
+
+15:16:00.596 [main] INFO  com.intuit.karate - [print] {
+  "id": 5553,
+  "buyerId": 3862,
+  "productId": 5,
+  "quantity": 3,
+  "price": 649.99,
+  "updatedAt": "2023-03-23T19:16:01.528Z",
+  "createdAt": "2023-03-23T19:16:01.528Z"
+}
+ 
+15:19:19.517 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:19:20.202 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:19:20.572 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:19:21.102 [main] DEBUG com.intuit.karate - response time in milliseconds: 529
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:19:22 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-P4KbYjWKYi7Me924AuQcnLBqN9k"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTE2Mn0.fEvR1W3t4sLg12tLeHNcl2VKcAX35_rSH_hC_SN8QxY"}
+
+15:19:21.109 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTE2Mn0.fEvR1W3t4sLg12tLeHNcl2VKcAX35_rSH_hC_SN8QxY"
+}
+ 
+15:19:21.124 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:31
+* path "/shopping-cart/" + productId
+js failed:
+>>>>
+01: "/shopping-cart/" + productId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "productId" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:31
+15:20:29.759 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:20:30.466 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:20:30.817 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:20:31.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 593
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:20:32 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-/FW0ewrTarZf6MDt3yCm+IvdCBk"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTIzMn0.6MnG4d8VgB-qysgWPrrNthtodgKstjHhhFnXhwEsNI0"}
+
+15:20:31.417 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTIzMn0.6MnG4d8VgB-qysgWPrrNthtodgKstjHhhFnXhwEsNI0"
+}
+ 
+15:20:31.422 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/shopping-cart
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTIzMn0.6MnG4d8VgB-qysgWPrrNthtodgKstjHhhFnXhwEsNI0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 28
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"productId":5,"quantity":3}
+
+15:20:31.613 [main] DEBUG com.intuit.karate - response time in milliseconds: 191
+1 < 400
+1 < Content-Length: 74
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:20:32 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"4a-zhbIbpFfXEBUTf2DTkfCv43AaV8"
+1 < X-Powered-By: Express
+{"code":400,"message":"This item already exists please call update route"}
+
+15:20:31.617 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:25
+* status 200
+status code was: 400, expected: 200, response time in milliseconds: 191, url: https://tek-retail-api.azurewebsites.net/shopping-cart, response: 
+{"code":400,"message":"This item already exists please call update route"}
+classpath:features/ShoppingCart.feature:25
+15:20:52.001 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:20:52.694 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:20:53.043 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:20:53.549 [main] DEBUG com.intuit.karate - response time in milliseconds: 503
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:20:54 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-Dg3a4YEtgtwaBn8OaetXBmy1hZM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTI1NH0.HLWd26_F3fw1GbVTXMhGlkOY9yTe2HgHHpyrBlEqXic"}
+
+15:20:53.554 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTI1NH0.HLWd26_F3fw1GbVTXMhGlkOY9yTe2HgHHpyrBlEqXic"
+}
+ 
+15:20:53.558 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/shopping-cart
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTI1NH0.HLWd26_F3fw1GbVTXMhGlkOY9yTe2HgHHpyrBlEqXic
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 28
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"productId":4,"quantity":3}
+
+15:20:53.766 [main] DEBUG com.intuit.karate - response time in milliseconds: 208
+1 < 200
+1 < Content-Length: 144
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:20:54 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"90-65vhPxwMRlmLMckknDyKLSXPAxY"
+1 < X-Powered-By: Express
+{"id":5554,"buyerId":3862,"productId":4,"quantity":3,"price":1596,"updatedAt":"2023-03-23T19:20:54.701Z","createdAt":"2023-03-23T19:20:54.701Z"}
+
+15:20:53.769 [main] INFO  com.intuit.karate - [print] {
+  "id": 5554,
+  "buyerId": 3862,
+  "productId": 4,
+  "quantity": 3,
+  "price": 1596,
+  "updatedAt": "2023-03-23T19:20:54.701Z",
+  "createdAt": "2023-03-23T19:20:54.701Z"
+}
+ 
+15:21:43.678 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:21:44.364 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:21:44.716 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:21:45.254 [main] DEBUG com.intuit.karate - response time in milliseconds: 536
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:21:46 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-jth+/QheX7qZp/PLqJlYFJfhX6o"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTMwNn0.in0qruYWBFPyb3_upbzy3tfBhTsOR-Na5LZxVObv57I"}
+
+15:21:45.261 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTMwNn0.in0qruYWBFPyb3_upbzy3tfBhTsOR-Na5LZxVObv57I"
+}
+ 
+15:21:45.271 [main] DEBUG com.intuit.karate - request:
+1 > PATCH https://tek-retail-api.azurewebsites.net/shopping-cart/5554
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTMwNn0.in0qruYWBFPyb3_upbzy3tfBhTsOR-Na5LZxVObv57I
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 14
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"quantity":8}
+
+15:21:45.508 [main] DEBUG com.intuit.karate - response time in milliseconds: 237
+1 < 200
+1 < Content-Length: 144
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:21:46 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"90-N819GUGfWgHyMnAVpXRWQAV3NuA"
+1 < X-Powered-By: Express
+{"id":5554,"buyerId":3862,"productId":4,"quantity":8,"price":1596,"createdAt":"2023-03-23T19:20:54.000Z","updatedAt":"2023-03-23T19:21:46.000Z"}
+
+15:21:45.512 [main] INFO  com.intuit.karate - [print] {
+  "id": 5554,
+  "buyerId": 3862,
+  "productId": 4,
+  "quantity": 8,
+  "price": 1596,
+  "createdAt": "2023-03-23T19:20:54.000Z",
+  "updatedAt": "2023-03-23T19:21:46.000Z"
+}
+ 
+15:24:28.744 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:24:29.455 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:24:29.826 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:24:30.353 [main] DEBUG com.intuit.karate - response time in milliseconds: 526
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:24:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-LCaDHzdq8breJ9WtR2Hvb6WuT4w"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTQ3MX0.UcBG68OBxVc9o2m4QfBKc5Qnj79AZJLk8dJCp0SIeU0"}
+
+15:24:30.360 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTQ3MX0.UcBG68OBxVc9o2m4QfBKc5Qnj79AZJLk8dJCp0SIeU0"
+}
+ 
+15:24:30.371 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:40
+* status 200
+java.lang.NullPointerException
+classpath:features/ShoppingCart.feature:40
+15:26:53.627 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:26:54.314 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:26:54.662 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:26:55.208 [main] DEBUG com.intuit.karate - response time in milliseconds: 544
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:26:56 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-QDzMVAvQ/GZgTjZvwhAToS9FF8g"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTYxNn0.76xnuOiHMZCo35qLh1KvvbPFzL5fqls91hXmgNkZCHw"}
+
+15:26:55.213 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTYxNn0.76xnuOiHMZCo35qLh1KvvbPFzL5fqls91hXmgNkZCHw"
+}
+ 
+15:26:55.218 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:41
+* status 200
+java.lang.NullPointerException
+classpath:features/ShoppingCart.feature:41
+15:27:41.244 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:27:41.981 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:27:42.366 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:27:42.891 [main] DEBUG com.intuit.karate - response time in milliseconds: 524
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:27:43 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-cpxYf73cVj3dRBvEIwMa5W2ptiA"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTY2M30.pAJ_4Yce8tjf0zLYbGj6izczyX4fO7RsIapVhlBAtMs"}
+
+15:27:42.898 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTY2M30.pAJ_4Yce8tjf0zLYbGj6izczyX4fO7RsIapVhlBAtMs"
+}
+ 
+15:27:42.911 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:40
+* status 200
+java.lang.NullPointerException
+classpath:features/ShoppingCart.feature:40
+15:28:07.643 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:28:08.374 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:08.727 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:28:09.192 [main] DEBUG com.intuit.karate - response time in milliseconds: 463
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:28:10 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-+dZMmvqLcjMBZsfS4JLt7lCovEI"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTY5MH0.ysTRhx7OL3h2Xxhf2fmOT-icz8PqjIIPN8w_eRZQokI"}
+
+15:28:09.198 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTY5MH0.ysTRhx7OL3h2Xxhf2fmOT-icz8PqjIIPN8w_eRZQokI"
+}
+ 
+15:28:09.205 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTY5MH0.ysTRhx7OL3h2Xxhf2fmOT-icz8PqjIIPN8w_eRZQokI
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:28:09.393 [main] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 200
+1 < Content-Length: 808
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:28:10 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"328-S/uhi9L8X+IzxoDcsJtUK+m31jY"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5553,"productId":5,"price":649.99,"quantity":3,"buyerId":3862,"productName":"Hisense U8H QLED Series Smart TV ","productImageUrl":"/images/products/6_5.jpg"},{"id":5554,"productId":4,"price":1596,"quantity":8,"buyerId":3862,"productName":"LG OLED C1 Series 65 Smart TV","productImageUrl":"/images/products/6_4.jpg"}]
+
+15:28:09.410 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 5545,
+    "productId": 7,
+    "price": 4498,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Sony HD TV ",
+    "productImageUrl": "/images/products/6_7.jpg"
+  },
+  {
+    "id": 5546,
+    "productId": 9,
+    "price": 129,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Toshiba V35 Series Smart Fire TV ",
+    "productImageUrl": "/images/products/6_9.jpg"
+  },
+  {
+    "id": 5547,
+    "productId": 12,
+    "price": 39.99,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Teenage Mutant Ninja Turtles Cowabunga Collection NSW",
+    "productImageUrl": "/images/products/7_2.jpg"
+  },
+  {
+    "id": 5553,
+    "productId": 5,
+    "price": 649.99,
+    "quantity": 3,
+    "buyerId": 3862,
+    "productName": "Hisense U8H QLED Series Smart TV ",
+    "productImageUrl": "/images/products/6_5.jpg"
+  },
+  {
+    "id": 5554,
+    "productId": 4,
+    "price": 1596,
+    "quantity": 8,
+    "buyerId": 3862,
+    "productName": "LG OLED C1 Series 65 Smart TV",
+    "productImageUrl": "/images/products/6_4.jpg"
+  }
+]
+ 
+15:28:43.880 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:28:44.584 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:28:44.937 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:28:45.449 [main] DEBUG com.intuit.karate - response time in milliseconds: 510
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:28:46 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-wUdImrEg9B1Mo/DYSkNsNGmGQuU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTcyNn0.AaHWMvC4sB3oawNlFFKWJsJJs0AwgcWa0mzvpZr8mF4"}
+
+15:28:45.455 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTcyNn0.AaHWMvC4sB3oawNlFFKWJsJJs0AwgcWa0mzvpZr8mF4"
+}
+ 
+15:28:45.465 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:40
+* status 200
+java.lang.NullPointerException
+classpath:features/ShoppingCart.feature:40
+15:29:28.358 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:29:29.094 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:29:29.465 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:29:29.953 [main] DEBUG com.intuit.karate - response time in milliseconds: 485
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:29:30 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-4cADBoA/EBylMhHxVhw/SaAM6Hs"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTc3MH0.VqAhNIDW8f4cmulN5Oa9W3CgYDE6LsN3TEo-4PavQc4"}
+
+15:29:29.959 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTc3MH0.VqAhNIDW8f4cmulN5Oa9W3CgYDE6LsN3TEo-4PavQc4"
+}
+ 
+15:29:29.977 [main] ERROR com.intuit.karate - classpath:features/ShoppingCart.feature:40
+* print response
+js failed:
+>>>>
+01: karate.log('[print]',response)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "response" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/ShoppingCart.feature:40
+15:30:18.876 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:30:19.562 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:30:19.906 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:30:20.448 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:30:21 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-Phhzz1EfD5I21o9gsroyMbAqcRU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTgyMX0.j_uHHwzQw-dGCcfvxqnhmY0U6A_Og8WrFQRBXVtiW8E"}
+
+15:30:20.455 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTgyMX0.j_uHHwzQw-dGCcfvxqnhmY0U6A_Og8WrFQRBXVtiW8E"
+}
+ 
+15:30:20.466 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://tek-retail-api.azurewebsites.net/shopping-cart/5553
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTU5OTgyMX0.j_uHHwzQw-dGCcfvxqnhmY0U6A_Og8WrFQRBXVtiW8E
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:30:20.675 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 200
+1 < Content-Length: 146
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:30:21 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"92-S0wEmgZRYcI+OWLQB+7yCkv/M1Y"
+1 < X-Powered-By: Express
+{"id":5553,"buyerId":3862,"productId":5,"quantity":3,"price":649.99,"createdAt":"2023-03-23T19:16:01.000Z","updatedAt":"2023-03-23T19:27:54.000Z"}
+
+15:30:20.678 [main] INFO  com.intuit.karate - [print] {
+  "id": 5553,
+  "buyerId": 3862,
+  "productId": 5,
+  "quantity": 3,
+  "price": 649.99,
+  "createdAt": "2023-03-23T19:16:01.000Z",
+  "updatedAt": "2023-03-23T19:27:54.000Z"
+}
+ 
