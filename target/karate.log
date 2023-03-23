@@ -1829,3 +1829,237 @@ classpath:features/ShoppingCart.feature:40
   "updatedAt": "2023-03-23T19:27:54.000Z"
 }
  
+15:42:09.385 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:42:10.078 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:42:10.110 [main] ERROR com.intuit.karate - classpath:features/GetHome.feature:5
+Given url baseUrl
+js failed:
+>>>>
+01: baseUrl
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "baseUrl" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/GetHome.feature:5
+15:42:28.473 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:42:29.148 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:42:29.506 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+15:42:30.055 [main] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:42:30 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-fDc+6UDYVPKVnDPLc9vGlXEmej0"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8"}
+
+15:42:30.061 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8"
+}
+ 
+15:42:30.066 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/home
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:42:30.276 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Content-Length: 3345
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 23 Mar 2023 19:42:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"d11-5ArLJE1y2qZIq7b9r1jc1ABY0PY"
+1 < X-Powered-By: Express
+{"topRated":{"title":"Our top Rated Products","products":[{"id":87,"name":"YESLIFE Ski Mask","imageUrl":"/images/products/15_6.jpg"},{"id":55,"name":"Under Armour Men's Playoff 2.0 Golf Polo","imageUrl":"/images/products/12_5.jpg"},{"id":43,"name":"Lutron Pico Smart Remote Control ","imageUrl":"/images/products/10_4.jpg"},{"id":91,"name":"X-PRO 125cc Vader Adult Motorcycle Gas Motorcycle","imageUrl":"/images/products/15_10.jpg"},{"id":25,"name":"USB Microphone","imageUrl":"/images/products/8_4.jpg"},{"id":69,"name":"VIPERTEK VTS-989-1 Billion Heavy Duty Stun Gun","imageUrl":"/images/products/13_9.jpg"}]},"latest":{"title":"Our Latest Products","products":[{"id":88,"name":"Bike Phone Holder","imageUrl":"/images/products/15_7.jpg"},{"id":39,"name":"Ubiquiti UniFi 6 Pro Access Point","imageUrl":"/images/products/9_10.jpg"},{"id":6,"name":"Amazon Fire TV ","imageUrl":"/images/products/6_6.jpg"},{"id":3,"name":"TCL 32-inch 3-Series 720p Roku Smart TV - 32S335, 2021 Model","imageUrl":"/images/products/6_2.jpg"},{"id":71,"name":"WILSON Traditional Soccer Ball","imageUrl":"/images/products/13_11.jpg"},{"id":29,"name":"SanDisk 128GB Ultra microSDXC UHS-I Memory Card","imageUrl":"/images/products/8_8.jpg"}]},"topCarouselProducts":["https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80","https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80","https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80","https://images.unsplash.com/photo-1630165356623-266076eaceb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"],"categories":{"1":{"subCategories":[{"subCategoryId":6,"subCategoryName":"TV & Video","imageUrl":"/images/products/6_1.jpg","productId":1},{"subCategoryId":7,"subCategoryName":"Video Games","imageUrl":"/images/products/7_1.jpg","productId":11}],"CategoryId":1,"categoryName":"Electronics"},"2":{"subCategories":[{"subCategoryId":8,"subCategoryName":"Accessories","imageUrl":"/images/products/8_1.jpg","productId":22},{"subCategoryId":9,"subCategoryName":"Networking","imageUrl":"/images/products/9_1.jpg","productId":30}],"CategoryId":2,"categoryName":"Computers"},"3":{"subCategories":[{"subCategoryId":10,"subCategoryName":"Smart Home Lightning","imageUrl":"/images/products/10_1.jpg","productId":40},{"subCategoryId":11,"subCategoryName":"Plugs and Outlets","imageUrl":"/images/products/11_1.jpg","productId":46}],"CategoryId":3,"categoryName":"Smart Home"},"4":{"subCategories":[{"subCategoryId":12,"subCategoryName":"Athletic Clothing","imageUrl":"/images/products/12_1.jpg","productId":51},{"subCategoryId":13,"subCategoryName":"Exercise & Fitness","imageUrl":"/images/products/13_1.jpg","productId":61}],"CategoryId":4,"categoryName":"Sports"},"5":{"subCategories":[{"subCategoryId":14,"subCategoryName":"Automative Parts & Accessories","imageUrl":"/images/products/14_1.jpg","productId":72},{"subCategoryId":15,"subCategoryName":"MotorCycle & Powersports","imageUrl":"/images/products/15_1.jpg","productId":82}],"CategoryId":5,"categoryName":"Automative"}}}
+
+15:42:30.280 [main] INFO  com.intuit.karate - [print] {
+  "topRated": {
+    "title": "Our top Rated Products",
+    "products": [
+      {
+        "id": 87,
+        "name": "YESLIFE Ski Mask",
+        "imageUrl": "/images/products/15_6.jpg"
+      },
+      {
+        "id": 55,
+        "name": "Under Armour Men's Playoff 2.0 Golf Polo",
+        "imageUrl": "/images/products/12_5.jpg"
+      },
+      {
+        "id": 43,
+        "name": "Lutron Pico Smart Remote Control ",
+        "imageUrl": "/images/products/10_4.jpg"
+      },
+      {
+        "id": 91,
+        "name": "X-PRO 125cc Vader Adult Motorcycle Gas Motorcycle",
+        "imageUrl": "/images/products/15_10.jpg"
+      },
+      {
+        "id": 25,
+        "name": "USB Microphone",
+        "imageUrl": "/images/products/8_4.jpg"
+      },
+      {
+        "id": 69,
+        "name": "VIPERTEK VTS-989-1 Billion Heavy Duty Stun Gun",
+        "imageUrl": "/images/products/13_9.jpg"
+      }
+    ]
+  },
+  "latest": {
+    "title": "Our Latest Products",
+    "products": [
+      {
+        "id": 88,
+        "name": "Bike Phone Holder",
+        "imageUrl": "/images/products/15_7.jpg"
+      },
+      {
+        "id": 39,
+        "name": "Ubiquiti UniFi 6 Pro Access Point",
+        "imageUrl": "/images/products/9_10.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Amazon Fire TV ",
+        "imageUrl": "/images/products/6_6.jpg"
+      },
+      {
+        "id": 3,
+        "name": "TCL 32-inch 3-Series 720p Roku Smart TV - 32S335, 2021 Model",
+        "imageUrl": "/images/products/6_2.jpg"
+      },
+      {
+        "id": 71,
+        "name": "WILSON Traditional Soccer Ball",
+        "imageUrl": "/images/products/13_11.jpg"
+      },
+      {
+        "id": 29,
+        "name": "SanDisk 128GB Ultra microSDXC UHS-I Memory Card",
+        "imageUrl": "/images/products/8_8.jpg"
+      }
+    ]
+  },
+  "topCarouselProducts": [
+    "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80",
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "https://images.unsplash.com/photo-1630165356623-266076eaceb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+  ],
+  "categories": {
+    "1": {
+      "subCategories": [
+        {
+          "subCategoryId": 6,
+          "subCategoryName": "TV & Video",
+          "imageUrl": "/images/products/6_1.jpg",
+          "productId": 1
+        },
+        {
+          "subCategoryId": 7,
+          "subCategoryName": "Video Games",
+          "imageUrl": "/images/products/7_1.jpg",
+          "productId": 11
+        }
+      ],
+      "CategoryId": 1,
+      "categoryName": "Electronics"
+    },
+    "2": {
+      "subCategories": [
+        {
+          "subCategoryId": 8,
+          "subCategoryName": "Accessories",
+          "imageUrl": "/images/products/8_1.jpg",
+          "productId": 22
+        },
+        {
+          "subCategoryId": 9,
+          "subCategoryName": "Networking",
+          "imageUrl": "/images/products/9_1.jpg",
+          "productId": 30
+        }
+      ],
+      "CategoryId": 2,
+      "categoryName": "Computers"
+    },
+    "3": {
+      "subCategories": [
+        {
+          "subCategoryId": 10,
+          "subCategoryName": "Smart Home Lightning",
+          "imageUrl": "/images/products/10_1.jpg",
+          "productId": 40
+        },
+        {
+          "subCategoryId": 11,
+          "subCategoryName": "Plugs and Outlets",
+          "imageUrl": "/images/products/11_1.jpg",
+          "productId": 46
+        }
+      ],
+      "CategoryId": 3,
+      "categoryName": "Smart Home"
+    },
+    "4": {
+      "subCategories": [
+        {
+          "subCategoryId": 12,
+          "subCategoryName": "Athletic Clothing",
+          "imageUrl": "/images/products/12_1.jpg",
+          "productId": 51
+        },
+        {
+          "subCategoryId": 13,
+          "subCategoryName": "Exercise & Fitness",
+          "imageUrl": "/images/products/13_1.jpg",
+          "productId": 61
+        }
+      ],
+      "CategoryId": 4,
+      "categoryName": "Sports"
+    },
+    "5": {
+      "subCategories": [
+        {
+          "subCategoryId": 14,
+          "subCategoryName": "Automative Parts & Accessories",
+          "imageUrl": "/images/products/14_1.jpg",
+          "productId": 72
+        },
+        {
+          "subCategoryId": 15,
+          "subCategoryName": "MotorCycle & Powersports",
+          "imageUrl": "/images/products/15_1.jpg",
+          "productId": 82
+        }
+      ],
+      "CategoryId": 5,
+      "categoryName": "Automative"
+    }
+  }
+}
+ 

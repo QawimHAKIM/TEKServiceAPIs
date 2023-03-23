@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("5fcaa490-b209-4dcc-9182-530e37143a7f",{name:"Qawim"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.GetHome</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-03-23 03:42:30 p.m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get Home Service Test</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/GetHome.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">TEK Retail Home Service</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">home</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get Home Service Test</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1107</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:42:29.149 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = call read(&quot;TokenGenerator.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">886</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.TokenGenerator</div>
+      </div>
+      <div class="time-cell passed">874</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">840</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">15:42:29.506 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}
+
+15:42:30.055 response time in milliseconds: 548
+1 &lt; 200
+1 &lt; Content-Length: 422
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 23 Mar 2023 19:42:30 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1a6-fDc+6UDYVPKVnDPLc9vGlXEmej0&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;sdetTester&quot;,&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;userId&quot;:4000,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:3862,&quot;phoneNumber&quot;:&quot;012345678919&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">15:42:30.062 [print] {
+  &quot;name&quot;: &quot;sdetTester&quot;,
+  &quot;email&quot;: &quot;tester1234@outlook.com&quot;,
+  &quot;userId&quot;: 4000,
+  &quot;role&quot;: &quot;customer&quot;,
+  &quot;roleId&quot;: 3862,
+  &quot;phoneNumber&quot;: &quot;012345678919&quot;,
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenValue.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/home&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">15:42:30.066 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/home
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTYwMDU1MH0.pL44Pf_yVwbp8G0tAWcBVsYv1Qmr6xk7QvWlT-x6mC8
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:42:30.277 response time in milliseconds: 210
+1 &lt; 200
+1 &lt; Content-Length: 3345
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Thu, 23 Mar 2023 19:42:31 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;d11-5ArLJE1y2qZIq7b9r1jc1ABY0PY&quot;
+1 &lt; X-Powered-By: Express
+{&quot;topRated&quot;:{&quot;title&quot;:&quot;Our top Rated Products&quot;,&quot;products&quot;:[{&quot;id&quot;:87,&quot;name&quot;:&quot;YESLIFE Ski Mask&quot;,&quot;imageUrl&quot;:&quot;/images/products/15_6.jpg&quot;},{&quot;id&quot;:55,&quot;name&quot;:&quot;Under Armour Men&#39;s Playoff 2.0 Golf Polo&quot;,&quot;imageUrl&quot;:&quot;/images/products/12_5.jpg&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;Lutron Pico Smart Remote Control &quot;,&quot;imageUrl&quot;:&quot;/images/products/10_4.jpg&quot;},{&quot;id&quot;:91,&quot;name&quot;:&quot;X-PRO 125cc Vader Adult Motorcycle Gas Motorcycle&quot;,&quot;imageUrl&quot;:&quot;/images/products/15_10.jpg&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;USB Microphone&quot;,&quot;imageUrl&quot;:&quot;/images/products/8_4.jpg&quot;},{&quot;id&quot;:69,&quot;name&quot;:&quot;VIPERTEK VTS-989-1 Billion Heavy Duty Stun Gun&quot;,&quot;imageUrl&quot;:&quot;/images/products/13_9.jpg&quot;}]},&quot;latest&quot;:{&quot;title&quot;:&quot;Our Latest Products&quot;,&quot;products&quot;:[{&quot;id&quot;:88,&quot;name&quot;:&quot;Bike Phone Holder&quot;,&quot;imageUrl&quot;:&quot;/images/products/15_7.jpg&quot;},{&quot;id&quot;:39,&quot;name&quot;:&quot;Ubiquiti UniFi 6 Pro Access Point&quot;,&quot;imageUrl&quot;:&quot;/images/products/9_10.jpg&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Amazon Fire TV &quot;,&quot;imageUrl&quot;:&quot;/images/products/6_6.jpg&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;TCL 32-inch 3-Series 720p Roku Smart TV - 32S335, 2021 Model&quot;,&quot;imageUrl&quot;:&quot;/images/products/6_2.jpg&quot;},{&quot;id&quot;:71,&quot;name&quot;:&quot;WILSON Traditional Soccer Ball&quot;,&quot;imageUrl&quot;:&quot;/images/products/13_11.jpg&quot;},{&quot;id&quot;:29,&quot;name&quot;:&quot;SanDisk 128GB Ultra microSDXC UHS-I Memory Card&quot;,&quot;imageUrl&quot;:&quot;/images/products/8_8.jpg&quot;}]},&quot;topCarouselProducts&quot;:[&quot;https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1473&amp;q=80&quot;,&quot;https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;,&quot;https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;,&quot;https://images.unsplash.com/photo-1630165356623-266076eaceb6?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;],&quot;categories&quot;:{&quot;1&quot;:{&quot;subCategories&quot;:[{&quot;subCategoryId&quot;:6,&quot;subCategoryName&quot;:&quot;TV &amp; Video&quot;,&quot;imageUrl&quot;:&quot;/images/products/6_1.jpg&quot;,&quot;productId&quot;:1},{&quot;subCategoryId&quot;:7,&quot;subCategoryName&quot;:&quot;Video Games&quot;,&quot;imageUrl&quot;:&quot;/images/products/7_1.jpg&quot;,&quot;productId&quot;:11}],&quot;CategoryId&quot;:1,&quot;categoryName&quot;:&quot;Electronics&quot;},&quot;2&quot;:{&quot;subCategories&quot;:[{&quot;subCategoryId&quot;:8,&quot;subCategoryName&quot;:&quot;Accessories&quot;,&quot;imageUrl&quot;:&quot;/images/products/8_1.jpg&quot;,&quot;productId&quot;:22},{&quot;subCategoryId&quot;:9,&quot;subCategoryName&quot;:&quot;Networking&quot;,&quot;imageUrl&quot;:&quot;/images/products/9_1.jpg&quot;,&quot;productId&quot;:30}],&quot;CategoryId&quot;:2,&quot;categoryName&quot;:&quot;Computers&quot;},&quot;3&quot;:{&quot;subCategories&quot;:[{&quot;subCategoryId&quot;:10,&quot;subCategoryName&quot;:&quot;Smart Home Lightning&quot;,&quot;imageUrl&quot;:&quot;/images/products/10_1.jpg&quot;,&quot;productId&quot;:40},{&quot;subCategoryId&quot;:11,&quot;subCategoryName&quot;:&quot;Plugs and Outlets&quot;,&quot;imageUrl&quot;:&quot;/images/products/11_1.jpg&quot;,&quot;productId&quot;:46}],&quot;CategoryId&quot;:3,&quot;categoryName&quot;:&quot;Smart Home&quot;},&quot;4&quot;:{&quot;subCategories&quot;:[{&quot;subCategoryId&quot;:12,&quot;subCategoryName&quot;:&quot;Athletic Clothing&quot;,&quot;imageUrl&quot;:&quot;/images/products/12_1.jpg&quot;,&quot;productId&quot;:51},{&quot;subCategoryId&quot;:13,&quot;subCategoryName&quot;:&quot;Exercise &amp; Fitness&quot;,&quot;imageUrl&quot;:&quot;/images/products/13_1.jpg&quot;,&quot;productId&quot;:61}],&quot;CategoryId&quot;:4,&quot;categoryName&quot;:&quot;Sports&quot;},&quot;5&quot;:{&quot;subCategories&quot;:[{&quot;subCategoryId&quot;:14,&quot;subCategoryName&quot;:&quot;Automative Parts &amp; Accessories&quot;,&quot;imageUrl&quot;:&quot;/images/products/14_1.jpg&quot;,&quot;productId&quot;:72},{&quot;subCategoryId&quot;:15,&quot;subCategoryName&quot;:&quot;MotorCycle &amp; Powersports&quot;,&quot;imageUrl&quot;:&quot;/images/products/15_1.jpg&quot;,&quot;productId&quot;:82}],&quot;CategoryId&quot;:5,&quot;categoryName&quot;:&quot;Automative&quot;}}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:42:30.282 [print] {
+  &quot;topRated&quot;: {
+    &quot;title&quot;: &quot;Our top Rated Products&quot;,
+    &quot;products&quot;: [
+      {
+        &quot;id&quot;: 87,
+        &quot;name&quot;: &quot;YESLIFE Ski Mask&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/15_6.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 55,
+        &quot;name&quot;: &quot;Under Armour Men&#39;s Playoff 2.0 Golf Polo&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/12_5.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 43,
+        &quot;name&quot;: &quot;Lutron Pico Smart Remote Control &quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/10_4.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 91,
+        &quot;name&quot;: &quot;X-PRO 125cc Vader Adult Motorcycle Gas Motorcycle&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/15_10.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 25,
+        &quot;name&quot;: &quot;USB Microphone&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/8_4.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 69,
+        &quot;name&quot;: &quot;VIPERTEK VTS-989-1 Billion Heavy Duty Stun Gun&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/13_9.jpg&quot;
+      }
+    ]
+  },
+  &quot;latest&quot;: {
+    &quot;title&quot;: &quot;Our Latest Products&quot;,
+    &quot;products&quot;: [
+      {
+        &quot;id&quot;: 88,
+        &quot;name&quot;: &quot;Bike Phone Holder&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/15_7.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 39,
+        &quot;name&quot;: &quot;Ubiquiti UniFi 6 Pro Access Point&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/9_10.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 6,
+        &quot;name&quot;: &quot;Amazon Fire TV &quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/6_6.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 3,
+        &quot;name&quot;: &quot;TCL 32-inch 3-Series 720p Roku Smart TV - 32S335, 2021 Model&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/6_2.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 71,
+        &quot;name&quot;: &quot;WILSON Traditional Soccer Ball&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/13_11.jpg&quot;
+      },
+      {
+        &quot;id&quot;: 29,
+        &quot;name&quot;: &quot;SanDisk 128GB Ultra microSDXC UHS-I Memory Card&quot;,
+        &quot;imageUrl&quot;: &quot;/images/products/8_8.jpg&quot;
+      }
+    ]
+  },
+  &quot;topCarouselProducts&quot;: [
+    &quot;https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1473&amp;q=80&quot;,
+    &quot;https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;,
+    &quot;https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;,
+    &quot;https://images.unsplash.com/photo-1630165356623-266076eaceb6?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80&quot;
+  ],
+  &quot;categories&quot;: {
+    &quot;1&quot;: {
+      &quot;subCategories&quot;: [
+        {
+          &quot;subCategoryId&quot;: 6,
+          &quot;subCategoryName&quot;: &quot;TV &amp; Video&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/6_1.jpg&quot;,
+          &quot;productId&quot;: 1
+        },
+        {
+          &quot;subCategoryId&quot;: 7,
+          &quot;subCategoryName&quot;: &quot;Video Games&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/7_1.jpg&quot;,
+          &quot;productId&quot;: 11
+        }
+      ],
+      &quot;CategoryId&quot;: 1,
+      &quot;categoryName&quot;: &quot;Electronics&quot;
+    },
+    &quot;2&quot;: {
+      &quot;subCategories&quot;: [
+        {
+          &quot;subCategoryId&quot;: 8,
+          &quot;subCategoryName&quot;: &quot;Accessories&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/8_1.jpg&quot;,
+          &quot;productId&quot;: 22
+        },
+        {
+          &quot;subCategoryId&quot;: 9,
+          &quot;subCategoryName&quot;: &quot;Networking&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/9_1.jpg&quot;,
+          &quot;productId&quot;: 30
+        }
+      ],
+      &quot;CategoryId&quot;: 2,
+      &quot;categoryName&quot;: &quot;Computers&quot;
+    },
+    &quot;3&quot;: {
+      &quot;subCategories&quot;: [
+        {
+          &quot;subCategoryId&quot;: 10,
+          &quot;subCategoryName&quot;: &quot;Smart Home Lightning&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/10_1.jpg&quot;,
+          &quot;productId&quot;: 40
+        },
+        {
+          &quot;subCategoryId&quot;: 11,
+          &quot;subCategoryName&quot;: &quot;Plugs and Outlets&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/11_1.jpg&quot;,
+          &quot;productId&quot;: 46
+        }
+      ],
+      &quot;CategoryId&quot;: 3,
+      &quot;categoryName&quot;: &quot;Smart Home&quot;
+    },
+    &quot;4&quot;: {
+      &quot;subCategories&quot;: [
+        {
+          &quot;subCategoryId&quot;: 12,
+          &quot;subCategoryName&quot;: &quot;Athletic Clothing&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/12_1.jpg&quot;,
+          &quot;productId&quot;: 51
+        },
+        {
+          &quot;subCategoryId&quot;: 13,
+          &quot;subCategoryName&quot;: &quot;Exercise &amp; Fitness&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/13_1.jpg&quot;,
+          &quot;productId&quot;: 61
+        }
+      ],
+      &quot;CategoryId&quot;: 4,
+      &quot;categoryName&quot;: &quot;Sports&quot;
+    },
+    &quot;5&quot;: {
+      &quot;subCategories&quot;: [
+        {
+          &quot;subCategoryId&quot;: 14,
+          &quot;subCategoryName&quot;: &quot;Automative Parts &amp; Accessories&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/14_1.jpg&quot;,
+          &quot;productId&quot;: 72
+        },
+        {
+          &quot;subCategoryId&quot;: 15,
+          &quot;subCategoryName&quot;: &quot;MotorCycle &amp; Powersports&quot;,
+          &quot;imageUrl&quot;: &quot;/images/products/15_1.jpg&quot;,
+          &quot;productId&quot;: 82
+        }
+      ],
+      &quot;CategoryId&quot;: 5,
+      &quot;categoryName&quot;: &quot;Automative&quot;
+    }
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
