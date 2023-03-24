@@ -13,26 +13,39 @@ import java.util.Map;
 
 public class DBUtility {
 
-	private static final String db_url = "jdbc:mysql://tek-database-server.mysql.database.azure.com:3306/tek_insurance_app?useSSL=true&requireSSL=false";
+	private static final String db_url = "jdbc:mysql://tek-database-server.mysql.database.azure.com:3306/retail?useSSL=true&requireSSL=false";
 	private static final String db_userName = "tek_student_user";
 	private static final String db_password = "MAY_2022";
 
+	private static Connection getConnection() {
+		try {
+			System.out.println("Making Connection to DataBase");
+			return DriverManager.getConnection(db_url, db_userName, db_password);
+		} catch (SQLException e) {
+
+			throw new RuntimeException("Error Connecting to Database");
+		}
+
+	}
+
 	private static Statement getConnectionStatement() {
 		try {
-			Connection con = DriverManager.getConnection(db_url, db_userName, db_password);
-			return con.createStatement();
+			return getConnection().createStatement();
 		} catch (SQLException e) {
-			throw new RuntimeException("Error creating statement...");
+			throw new RuntimeException("Error Creating Statement");
 		}
 	}
 
 	public static ResultSet executeQuery(String query) {
+		Statement statement;
+		statement = getConnectionStatement();
 		try {
-			ResultSet resultSet = getConnectionStatement().executeQuery(query);
-			return resultSet;
+			return statement.executeQuery(query);
 		} catch (SQLException e) {
-			throw new RuntimeException("Error generating result...");
+			// TODO Auto-generated catch block
+			throw new RuntimeException("Error executing query");
 		}
+
 	}
 
 	public static List<Map<String, Object>> queryResult(String query) {

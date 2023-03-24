@@ -1,3 +1,4 @@
+@cart
 Feature: Shopping Cart Services
 
   Background: 
@@ -13,29 +14,28 @@ Feature: Shopping Cart Services
     * param buyerId = buyerID
     * method get
     * status 200
-    * def id = response.buyerId
     * match buyerID == 3862
     * print response
 
 		@cart2
     Scenario: Post to Shopping Cart Service Test
     * path "/shopping-cart"
-    * request {"productId":4,"quantity":3}
+    * request {"productId":9,"quantity":1}
     * method post
     * status 200
     * print response
     
     @cart3
     Scenario: Update of Shopping Cart Service Test
-    * def id = 5554
+    * def id = 5547
     * path "/shopping-cart/" + id 
-    * request {"quantity":8}
+    * request {"quantity":4}
     * method patch
     * print response
     
     @cart4
     Scenario: Delete From Shopping Cart Service Test
-    * def id = 5553
+    * def id = 5547
     * path "/shopping-cart/" + id
     * method delete
     * status 200
