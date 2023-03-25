@@ -6398,3 +6398,1100 @@ classpath:features/Payment.feature:44
   "updatedAt": "2023-03-24T17:49:25.000Z"
 }
  
+10:26:03.761 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:26:04.906 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:26:05.419 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:26:06.112 [main] DEBUG com.intuit.karate - response time in milliseconds: 692
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:26:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-OHOt+666d6xuxa2QvKWP5aKJnjI"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDM2NX0.BRds0wmlXSbVd0pJHV1wShOp4DUX4WBqIVdaj8YFQfE"}
+
+10:26:06.120 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDM2NX0.BRds0wmlXSbVd0pJHV1wShOp4DUX4WBqIVdaj8YFQfE"
+}
+ 
+10:26:06.126 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDM2NX0.BRds0wmlXSbVd0pJHV1wShOp4DUX4WBqIVdaj8YFQfE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:26:06.330 [main] DEBUG com.intuit.karate - response time in milliseconds: 203
+1 < 200
+1 < Content-Length: 1698
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:26:05 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"6a2-kdpLSG5xogTxwk7+eW3ReZU22mA"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"}]
+
+10:26:06.349 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  }
+]
+ 
+10:30:19.297 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:30:20.154 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:30:20.601 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:30:21.202 [main] DEBUG com.intuit.karate - response time in milliseconds: 598
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:30:20 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-eebufjiS8t9a1QswdNx6gSESXbU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDYyMH0.ok7iTcC94yuhH3xprl5OVttgWs2v4fx-_5N7qfIrorc"}
+
+10:30:21.209 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDYyMH0.ok7iTcC94yuhH3xprl5OVttgWs2v4fx-_5N7qfIrorc"
+}
+ 
+10:30:21.215 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDYyMH0.ok7iTcC94yuhH3xprl5OVttgWs2v4fx-_5N7qfIrorc
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:30:21.413 [main] DEBUG com.intuit.karate - response time in milliseconds: 197
+1 < 400
+1 < Content-Length: 341
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:30:21 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"155-GN438U/bjXH1fGx8ifHJi+o8/I8"
+1 < X-Powered-By: Express
+{"type":"ValidationError","errors":{"body":{"country":["Country is a required field"],"fullName":["Full Name is a required field"],"phoneNumber":["Phone Number is a required field"],"street":["Street is a required field"],"city":["City is a required field"],"state":["State is a required field"],"zipCode":["Zip Code is a required field"]}}}
+
+10:30:21.417 [main] INFO  com.intuit.karate - [print] {
+  "type": "ValidationError",
+  "errors": {
+    "body": {
+      "country": [
+        "Country is a required field"
+      ],
+      "fullName": [
+        "Full Name is a required field"
+      ],
+      "phoneNumber": [
+        "Phone Number is a required field"
+      ],
+      "street": [
+        "Street is a required field"
+      ],
+      "city": [
+        "City is a required field"
+      ],
+      "state": [
+        "State is a required field"
+      ],
+      "zipCode": [
+        "Zip Code is a required field"
+      ]
+    }
+  }
+}
+ 
+10:31:03.209 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:31:04.062 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:31:04.495 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:31:05.125 [main] DEBUG com.intuit.karate - response time in milliseconds: 627
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:31:04 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-Jz0f+7F+QQ2EKxuqmJI9UxCFsD4"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDY2NH0.cvmHsW5xpmyiODLFPWlPXx0hwBIDOD4binfGoQFrKek"}
+
+10:31:05.132 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDY2NH0.cvmHsW5xpmyiODLFPWlPXx0hwBIDOD4binfGoQFrKek"
+}
+ 
+10:31:05.138 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NDY2NH0.cvmHsW5xpmyiODLFPWlPXx0hwBIDOD4binfGoQFrKek
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 158
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"country":"Egypt","fullName":"Jack","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":"45678"}
+
+10:31:05.347 [main] DEBUG com.intuit.karate - response time in milliseconds: 208
+1 < 200
+1 < Content-Length: 260
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:31:04 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"104-nhddKOMo8/4LluXs8ClZ3qo5DGE"
+1 < X-Powered-By: Express
+{"id":5565,"country":"Egypt","fullName":"Jack","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":"45678","userId":4000,"updatedAt":"2023-03-25T14:31:04.932Z","createdAt":"2023-03-25T14:31:04.932Z"}
+
+10:31:05.351 [main] INFO  com.intuit.karate - [print] {
+  "id": 5565,
+  "country": "Egypt",
+  "fullName": "Jack",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": "45678",
+  "userId": 4000,
+  "updatedAt": "2023-03-25T14:31:04.932Z",
+  "createdAt": "2023-03-25T14:31:04.932Z"
+}
+ 
+10:37:27.532 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:37:28.361 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:37:28.776 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:37:29.445 [main] DEBUG com.intuit.karate - response time in milliseconds: 667
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:37:28 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-e3Way8IffLPLBotpLl2YQlph9UE"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTA0OH0.QiDnUyiCSMvGfLDXe9BDlyc_CaZhFULFlpY8-fLNwgA"}
+
+10:37:29.453 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTA0OH0.QiDnUyiCSMvGfLDXe9BDlyc_CaZhFULFlpY8-fLNwgA"
+}
+ 
+10:37:30.211 [main] ERROR com.intuit.karate - classpath:features/Address.feature:38
+* def id = dbUtility.result("select id from addresses where name = " + 'Jack', "id")
+js failed:
+>>>>
+01: dbUtility.result("select id from addresses where name = " + 'Jack', "id")
+<<<<
+org.graalvm.polyglot.PolyglotException: Error executing query
+- test.DBUtility.executeQuery(DBUtility.java:46)
+- test.DBUtility.queryResult(DBUtility.java:55)
+- test.DBUtility.result(DBUtility.java:85)
+- <js>.:program(Unnamed:1)
+
+classpath:features/Address.feature:38
+10:38:08.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:38:09.571 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:38:09.983 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:38:10.542 [main] DEBUG com.intuit.karate - response time in milliseconds: 555
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:38:10 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-OEOK8fXeTLolRpdvgkRDxAyTSyY"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTA5MH0.yis6XLC7hZItEvJeWq8SG-KPsLQhKjOksJJKWrkV7lE"}
+
+10:38:10.552 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTA5MH0.yis6XLC7hZItEvJeWq8SG-KPsLQhKjOksJJKWrkV7lE"
+}
+ 
+10:38:11.276 [main] ERROR com.intuit.karate - classpath:features/Address.feature:38
+* def id = dbUtility.result("select id from addresses where name = 'Jack'", "id")
+js failed:
+>>>>
+01: dbUtility.result("select id from addresses where name = 'Jack'", "id")
+<<<<
+org.graalvm.polyglot.PolyglotException: Error executing query
+- test.DBUtility.executeQuery(DBUtility.java:46)
+- test.DBUtility.queryResult(DBUtility.java:55)
+- test.DBUtility.result(DBUtility.java:85)
+- <js>.:program(Unnamed:1)
+
+classpath:features/Address.feature:38
+10:39:16.306 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:39:17.186 [main] INFO  com.intuit.karate - karate.env system property was: null 
+10:39:17.604 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+10:39:18.299 [main] DEBUG com.intuit.karate - response time in milliseconds: 693
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 14:39:17 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-OBqxY6zYMwWaRJwC3uWHL0/8ilI"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTE1N30.LdRHHdqqm9fnEpAruix3Hj_ZCvm6W4h_AR4piVCKxd4"}
+
+10:39:18.307 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NTE1N30.LdRHHdqqm9fnEpAruix3Hj_ZCvm6W4h_AR4piVCKxd4"
+}
+ 
+10:39:19.290 [main] ERROR com.intuit.karate - classpath:features/Address.feature:39
+* def id = dbUtility.result("select id from addresses where name = '" + name + "'", "id")
+js failed:
+>>>>
+01: dbUtility.result("select id from addresses where name = '" + name + "'", "id")
+<<<<
+org.graalvm.polyglot.PolyglotException: Error executing query
+- test.DBUtility.executeQuery(DBUtility.java:46)
+- test.DBUtility.queryResult(DBUtility.java:55)
+- test.DBUtility.result(DBUtility.java:85)
+- <js>.:program(Unnamed:1)
+
+classpath:features/Address.feature:39
+11:03:18.255 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:03:19.072 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:19.479 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:03:20.126 [main] DEBUG com.intuit.karate - response time in milliseconds: 646
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:03:19 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-nK915L/p3bV3VPUAgCiKOtyr9Oc"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjU5OX0.2LDe1EntmWVvrAd3_5MN5MiaFSTKxpaR9yvJRhq23m0"}
+
+11:03:20.134 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjU5OX0.2LDe1EntmWVvrAd3_5MN5MiaFSTKxpaR9yvJRhq23m0"
+}
+ 
+11:03:21.121 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://tek-retail-api.azurewebsites.net/address/5565
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjU5OX0.2LDe1EntmWVvrAd3_5MN5MiaFSTKxpaR9yvJRhq23m0
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"country":"Dubai","fullName":"DubaiDubai"}
+
+11:03:21.334 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Content-Length: 282
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:03:20 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"11a-uz5RTafc8rJRwa71wHaYCX4Sv24"
+1 < X-Powered-By: Express
+{"id":5565,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T14:31:04.000Z","updatedAt":"2023-03-25T15:03:20.000Z"}
+
+11:03:21.337 [main] INFO  com.intuit.karate - [print] {
+  "id": 5565,
+  "country": "Dubai",
+  "fullName": "DubaiDubai",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": 45678,
+  "userId": 4000,
+  "isDeleted": false,
+  "createdAt": "2023-03-25T14:31:04.000Z",
+  "updatedAt": "2023-03-25T15:03:20.000Z"
+}
+ 
+11:07:33.897 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:07:34.703 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:07:35.107 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:07:35.720 [main] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:07:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-7MyQCdxzrMOm93S4EcNrUckR4sE"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1Njg1NX0.pCvYZugKlVGjZWL5exvbxxRt1HmX8HV8x7-iZ1U6fWI"}
+
+11:07:35.727 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1Njg1NX0.pCvYZugKlVGjZWL5exvbxxRt1HmX8HV8x7-iZ1U6fWI"
+}
+ 
+11:07:36.981 [main] ERROR com.intuit.karate - classpath:features/Address.feature:50
+* def id = dbUtility.result("select id from addresses where fullName = '" + name + "'", "id")
+js failed:
+>>>>
+01: dbUtility.result("select id from addresses where fullName = '" + name + "'", "id")
+<<<<
+org.graalvm.polyglot.PolyglotException: Index: 0, Size: 0
+- java.base/java.util.LinkedList.checkElementIndex(LinkedList.java:559)
+- java.base/java.util.LinkedList.get(LinkedList.java:480)
+- test.DBUtility.result(DBUtility.java:86)
+- <js>.:program(Unnamed:1)
+
+classpath:features/Address.feature:50
+11:08:37.394 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:08:38.242 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:08:38.645 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:08:39.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 666
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:08:38 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-5rkIvH1MCGlOlt8ANvMqKn2ZxRc"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjkxOH0.AyKKrzt3Ld99b4tcQuuDQc5hQhryZyS0RA2NWwqUE4w"}
+
+11:08:39.320 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjkxOH0.AyKKrzt3Ld99b4tcQuuDQc5hQhryZyS0RA2NWwqUE4w"
+}
+ 
+11:08:40.058 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://tek-retail-api.azurewebsites.net/address/5565
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NjkxOH0.AyKKrzt3Ld99b4tcQuuDQc5hQhryZyS0RA2NWwqUE4w
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:08:40.281 [main] DEBUG com.intuit.karate - response time in milliseconds: 222
+1 < 200
+1 < Content-Length: 282
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:08:39 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"11a-uz5RTafc8rJRwa71wHaYCX4Sv24"
+1 < X-Powered-By: Express
+{"id":5565,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T14:31:04.000Z","updatedAt":"2023-03-25T15:03:20.000Z"}
+
+11:08:40.285 [main] INFO  com.intuit.karate - [print] {
+  "id": 5565,
+  "country": "Dubai",
+  "fullName": "DubaiDubai",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": 45678,
+  "userId": 4000,
+  "isDeleted": false,
+  "createdAt": "2023-03-25T14:31:04.000Z",
+  "updatedAt": "2023-03-25T15:03:20.000Z"
+}
+ 
+11:08:59.115 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:08:59.942 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:09:00.417 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:09:00.977 [main] DEBUG com.intuit.karate - response time in milliseconds: 558
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:09:00 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-d39VR1Gc6kgXTHi9/uRqVUxq644"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1Njk0MH0.lG5UPmESnnikEVzCzzQrr9ihqVPY1CPSdWh4Em87Qxw"}
+
+11:09:00.984 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1Njk0MH0.lG5UPmESnnikEVzCzzQrr9ihqVPY1CPSdWh4Em87Qxw"
+}
+ 
+11:09:00.990 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1Njk0MH0.lG5UPmESnnikEVzCzzQrr9ihqVPY1CPSdWh4Em87Qxw
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:09:01.169 [main] DEBUG com.intuit.karate - response time in milliseconds: 178
+1 < 200
+1 < Content-Length: 1698
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:09:00 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"6a2-kdpLSG5xogTxwk7+eW3ReZU22mA"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"}]
+
+11:09:01.173 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  }
+]
+ 
+11:10:33.260 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:10:34.088 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:34.467 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:10:35.130 [main] DEBUG com.intuit.karate - response time in milliseconds: 660
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:34 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-1yBAZ1JMnwVWZzvEqFxnLiOpW5c"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNH0.IVTX9SE1BWyMlRIDzZyPreLw1Tdrgxt57RVZ4RJjoUM"}
+
+11:10:35.136 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNH0.IVTX9SE1BWyMlRIDzZyPreLw1Tdrgxt57RVZ4RJjoUM"
+}
+ 
+11:10:35.141 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNH0.IVTX9SE1BWyMlRIDzZyPreLw1Tdrgxt57RVZ4RJjoUM
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:10:35.351 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Content-Length: 1698
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:34 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"6a2-kdpLSG5xogTxwk7+eW3ReZU22mA"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"}]
+
+11:10:35.354 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  }
+]
+ 
+11:10:35.366 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:35.376 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:10:35.881 [main] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-iFtyAJRr2VhC5GWd0oxdO5ah+yA"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g"}
+
+11:10:35.884 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g"
+}
+ 
+11:10:35.889 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 158
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"country":"Egypt","fullName":"Jack","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":"45678"}
+
+11:10:36.069 [main] DEBUG com.intuit.karate - response time in milliseconds: 180
+1 < 200
+1 < Content-Length: 260
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"104-ZnS0iWA7af7k2Ir2rNcYavG0Dlc"
+1 < X-Powered-By: Express
+{"id":5566,"country":"Egypt","fullName":"Jack","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":"45678","userId":4000,"updatedAt":"2023-03-25T15:10:35.644Z","createdAt":"2023-03-25T15:10:35.644Z"}
+
+11:10:36.073 [main] INFO  com.intuit.karate - [print] {
+  "id": 5566,
+  "country": "Egypt",
+  "fullName": "Jack",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": "45678",
+  "userId": 4000,
+  "updatedAt": "2023-03-25T15:10:35.644Z",
+  "createdAt": "2023-03-25T15:10:35.644Z"
+}
+ 
+11:10:36.080 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:36.087 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:10:36.384 [main] DEBUG com.intuit.karate - response time in milliseconds: 297
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-iFtyAJRr2VhC5GWd0oxdO5ah+yA"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g"}
+
+11:10:36.387 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g"
+}
+ 
+11:10:37.058 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://tek-retail-api.azurewebsites.net/address/5566
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzNX0.M6_lui2LVVQJiR4aeGLXkq_K5rSlx64eWKcBTOykT0g
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"country":"Dubai","fullName":"DubaiDubai"}
+
+11:10:37.260 [main] DEBUG com.intuit.karate - response time in milliseconds: 202
+1 < 200
+1 < Content-Length: 282
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:36 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"11a-JeXWlhvE7+7tMstkhodmoU3cONs"
+1 < X-Powered-By: Express
+{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}
+
+11:10:37.263 [main] INFO  com.intuit.karate - [print] {
+  "id": 5566,
+  "country": "Dubai",
+  "fullName": "DubaiDubai",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": 45678,
+  "userId": 4000,
+  "isDeleted": false,
+  "createdAt": "2023-03-25T15:10:35.000Z",
+  "updatedAt": "2023-03-25T15:10:36.000Z"
+}
+ 
+11:10:37.271 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:10:37.279 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+11:10:37.677 [main] DEBUG com.intuit.karate - response time in milliseconds: 398
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:37 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-5iUiE29vks3rHWv9NAuyj9YisWg"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzN30.4aFkST9SGulIlNT5SmnAOxAEGK8yxMktliw8fmThCyk"}
+
+11:10:37.679 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzN30.4aFkST9SGulIlNT5SmnAOxAEGK8yxMktliw8fmThCyk"
+}
+ 
+11:10:38.020 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://tek-retail-api.azurewebsites.net/address/5565
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTc1NzAzN30.4aFkST9SGulIlNT5SmnAOxAEGK8yxMktliw8fmThCyk
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:10:38.200 [main] DEBUG com.intuit.karate - response time in milliseconds: 179
+1 < 200
+1 < Content-Length: 281
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 25 Mar 2023 15:10:37 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"119-DUzHZjgFOJMVtafM3H4OZBIc/30"
+1 < X-Powered-By: Express
+{"id":5565,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":true,"createdAt":"2023-03-25T14:31:04.000Z","updatedAt":"2023-03-25T15:08:39.000Z"}
+
+11:10:38.202 [main] INFO  com.intuit.karate - [print] {
+  "id": 5565,
+  "country": "Dubai",
+  "fullName": "DubaiDubai",
+  "phoneNumber": "98765432112",
+  "street": "123Hello",
+  "apartment": "123",
+  "city": "Tysons",
+  "state": "California",
+  "zipCode": 45678,
+  "userId": 4000,
+  "isDeleted": true,
+  "createdAt": "2023-03-25T14:31:04.000Z",
+  "updatedAt": "2023-03-25T15:08:39.000Z"
+}
+ 
