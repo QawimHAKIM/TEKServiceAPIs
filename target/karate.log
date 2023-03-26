@@ -7495,3 +7495,2680 @@ classpath:features/Address.feature:50
   "updatedAt": "2023-03-25T15:08:39.000Z"
 }
  
+12:26:28.109 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:26:29.328 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:26:29.381 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:5
+* def tokenValue = call reas("TokenGenerator.feature")
+js failed:
+>>>>
+01: reas("TokenGenerator.feature")
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "reas" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/SchemaValidation.feature:5
+12:26:47.677 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:26:48.486 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:26:49.050 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:26:49.832 [main] DEBUG com.intuit.karate - response time in milliseconds: 778
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:26:48 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-Q8nC/ELQg+Ku88vE96KPrnmOUHU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODAwOH0.x-_62FJK8Dj8Bv5jRTNzS1uJLhIRyGyLVReItxv2qXg"}
+
+12:26:49.847 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODAwOH0.x-_62FJK8Dj8Bv5jRTNzS1uJLhIRyGyLVReItxv2qXg"
+}
+ 
+12:26:49.858 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODAwOH0.x-_62FJK8Dj8Bv5jRTNzS1uJLhIRyGyLVReItxv2qXg
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:26:50.085 [main] DEBUG com.intuit.karate - response time in milliseconds: 226
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:26:48 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:26:50.090 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:26:50.123 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response ==
+"""
+{
+    "id": '#number',
+    "country": '#string',
+    "fullName": '#string',
+    "phoneNumber": '#string',
+    "street": '#string',
+    "apartment": '#string',
+    "city": '#string',
+    "state": '#string',
+    "zipCode": '#string',
+    "userId": '#number',
+    "isDeleted": '#present',
+    "createdAt": '#present',
+    "updatedAt": '#present'
+  }
+"""
+match failed: EQUALS
+  $ | data types don't match (LIST:MAP)
+  [{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+  {"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#string","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}
+
+classpath:features/SchemaValidation.feature:14
+12:27:21.478 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:27:22.183 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:27:22.548 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:27:23.123 [main] DEBUG com.intuit.karate - response time in milliseconds: 572
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:27:21 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-bbdOgpzs/8pq7p0D4lXMta/Gmt8"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA0MX0.W3GYMd3FpIAysSCv703oQiTuuKpP2ugG_j1l8yBrDQE"}
+
+12:27:23.143 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA0MX0.W3GYMd3FpIAysSCv703oQiTuuKpP2ugG_j1l8yBrDQE"
+}
+ 
+12:27:23.150 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA0MX0.W3GYMd3FpIAysSCv703oQiTuuKpP2ugG_j1l8yBrDQE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:27:23.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:27:22 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:27:23.368 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:27:23.388 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response ==
+"""
+[
+{
+    "id": '#number',
+    "country": '#string',
+    "fullName": '#string',
+    "phoneNumber": '#string',
+    "street": '#string',
+    "apartment": '#string',
+    "city": '#string',
+    "state": '#string',
+    "zipCode": '#string',
+    "userId": '#number',
+    "isDeleted": '#present',
+    "createdAt": '#present',
+    "updatedAt": '#present'
+  }
+  ]
+"""
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 7:1 (LIST:LIST)
+  [{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+  [{"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#string","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}]
+
+
+classpath:features/SchemaValidation.feature:14
+12:28:10.768 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:28:11.509 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:28:11.891 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:28:12.480 [main] DEBUG com.intuit.karate - response time in milliseconds: 585
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:11 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-4i9zvsHx+U6Up53s7V/oeVLbtcg"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA5MX0.VDmgi_A1e4ylx_P3H9OlsxZomovXvjTH5rQiEALwQFA"}
+
+12:28:12.487 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA5MX0.VDmgi_A1e4ylx_P3H9OlsxZomovXvjTH5rQiEALwQFA"
+}
+ 
+12:28:12.491 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODA5MX0.VDmgi_A1e4ylx_P3H9OlsxZomovXvjTH5rQiEALwQFA
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:28:12.702 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:11 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:28:12.708 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:28:12.728 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response[0] ==
+"""
+[
+{
+    "id": '#number',
+    "country": '#string',
+    "fullName": '#string',
+    "phoneNumber": '#string',
+    "street": '#string',
+    "apartment": '#string',
+    "city": '#string',
+    "state": '#string',
+    "zipCode": '#string',
+    "userId": '#number',
+    "isDeleted": '#present',
+    "createdAt": '#present',
+    "updatedAt": '#present'
+  }
+  ]
+"""
+match failed: EQUALS
+  $ | data types don't match (MAP:LIST)
+  {"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"}
+  [{"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#string","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}]
+
+classpath:features/SchemaValidation.feature:14
+12:28:26.989 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:28:27.764 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:28:28.148 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:28:28.755 [main] DEBUG com.intuit.karate - response time in milliseconds: 603
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:27 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-yuLEq5lPm5hJ+nLusvKTrCeA33I"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEwN30.hgDOuMqDb10fye9kHtrXZMWDgav_wtaqyCaVWSR3L0g"}
+
+12:28:28.769 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEwN30.hgDOuMqDb10fye9kHtrXZMWDgav_wtaqyCaVWSR3L0g"
+}
+ 
+12:28:28.779 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEwN30.hgDOuMqDb10fye9kHtrXZMWDgav_wtaqyCaVWSR3L0g
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:28:28.994 [main] DEBUG com.intuit.karate - response time in milliseconds: 215
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:27 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:28:28.997 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:28:29.010 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response[0] ==
+"""
+{
+          "id": '#number',
+          "country": '#string',
+          "fullName": '#string',
+          "phoneNumber": '#string',
+          "street": '#string',
+          "apartment": '#string',
+          "city": '#string',
+          "state": '#string',
+          "zipCode": '#string',
+          "userId": '#number',
+          "isDeleted": '#present',
+          "createdAt": '#present',
+          "updatedAt": '#present'
+        }
+"""
+match failed: EQUALS
+  $ | not equal | match failed for name: 'zipCode' (MAP:MAP)
+  {"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"}
+  {"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#string","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}
+
+    $.zipCode | not a string (NUMBER:STRING)
+    23465
+    '#string'
+
+classpath:features/SchemaValidation.feature:14
+12:28:53.103 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:28:53.824 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:28:54.182 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:28:54.744 [main] DEBUG com.intuit.karate - response time in milliseconds: 559
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:53 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-ZJj0+AkTa695o+1L+Q7pPHddeMs"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEzM30.LztEA1keLC-m_7cYR7-rWhBiau3vg1kTsrwl94vrHvo"}
+
+12:28:54.759 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEzM30.LztEA1keLC-m_7cYR7-rWhBiau3vg1kTsrwl94vrHvo"
+}
+ 
+12:28:54.768 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODEzM30.LztEA1keLC-m_7cYR7-rWhBiau3vg1kTsrwl94vrHvo
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:28:54.974 [main] DEBUG com.intuit.karate - response time in milliseconds: 205
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:28:53 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:28:54.982 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:29:14.027 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:29:14.717 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:29:15.079 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:29:15.629 [main] DEBUG com.intuit.karate - response time in milliseconds: 547
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:14 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-R7e9V+3Xl4ZpjKjBTvPvYBINjao"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE1NH0.dJL5JZynV8x6FmxFU5ibNX8PoreoUf2AwIR3hpVVAaY"}
+
+12:29:15.636 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE1NH0.dJL5JZynV8x6FmxFU5ibNX8PoreoUf2AwIR3hpVVAaY"
+}
+ 
+12:29:15.640 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE1NH0.dJL5JZynV8x6FmxFU5ibNX8PoreoUf2AwIR3hpVVAaY
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:29:15.846 [main] DEBUG com.intuit.karate - response time in milliseconds: 206
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:14 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:29:15.852 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:29:15.868 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response ==
+"""
+[
+{
+    "id": '#number',
+    "country": '#string',
+    "fullName": '#string',
+    "phoneNumber": '#string',
+    "street": '#string',
+    "apartment": '#string',
+    "city": '#string',
+    "state": '#string',
+    "zipCode": '#number',
+    "userId": '#number',
+    "isDeleted": '#present',
+    "createdAt": '#present',
+    "updatedAt": '#present'
+  }
+ ]
+"""
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 7:1 (LIST:LIST)
+  [{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+  [{"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#number","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}]
+
+
+classpath:features/SchemaValidation.feature:14
+12:29:38.508 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:29:39.267 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:29:39.659 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:29:40.205 [main] DEBUG com.intuit.karate - response time in milliseconds: 544
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:38 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-FXELlwoQgG+c3yZmNhQUvXgJPS0"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE3OH0.YIZ-QVCIcXInv8wKrpbTsp6smQ7oRLjuXdMTZsXG1-U"}
+
+12:29:40.212 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE3OH0.YIZ-QVCIcXInv8wKrpbTsp6smQ7oRLjuXdMTZsXG1-U"
+}
+ 
+12:29:40.217 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE3OH0.YIZ-QVCIcXInv8wKrpbTsp6smQ7oRLjuXdMTZsXG1-U
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:29:40.438 [main] DEBUG com.intuit.karate - response time in milliseconds: 221
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:39 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:29:40.446 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:29:40.461 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:14
+* match response[0] ==
+"""
+[
+{
+    "id": '#number',
+    "country": '#string',
+    "fullName": '#string',
+    "phoneNumber": '#string',
+    "street": '#string',
+    "apartment": '#string',
+    "city": '#string',
+    "state": '#string',
+    "zipCode": '#number',
+    "userId": '#number',
+    "isDeleted": '#present',
+    "createdAt": '#present',
+    "updatedAt": '#present'
+  }
+ ]
+"""
+match failed: EQUALS
+  $ | data types don't match (MAP:LIST)
+  {"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"}
+  [{"id":"#number","country":"#string","fullName":"#string","phoneNumber":"#string","street":"#string","apartment":"#string","city":"#string","state":"#string","zipCode":"#number","userId":"#number","isDeleted":"#present","createdAt":"#present","updatedAt":"#present"}]
+
+classpath:features/SchemaValidation.feature:14
+12:29:55.989 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:29:56.693 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:29:57.066 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:29:57.637 [main] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:56 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-XER+S6JfSlSMYfYIZtYr6izGUvQ"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE5Nn0.OmCidnWj1rfp94xsXT83zvaNKEAdMpTHOEI_phlGVBE"}
+
+12:29:57.645 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE5Nn0.OmCidnWj1rfp94xsXT83zvaNKEAdMpTHOEI_phlGVBE"
+}
+ 
+12:29:57.649 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODE5Nn0.OmCidnWj1rfp94xsXT83zvaNKEAdMpTHOEI_phlGVBE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:29:57.842 [main] DEBUG com.intuit.karate - response time in milliseconds: 192
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:29:56 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:29:57.847 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+12:40:54.560 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:40:55.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:40:55.780 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:40:56.492 [main] DEBUG com.intuit.karate - response time in milliseconds: 707
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:40:55 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-/wkofWiS3HzMo4/kU2oz0YcRfRE"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODg1NX0.4d_xxF7vZyInLkGz35kknD-IJllcd278UARwZsV_JcQ"}
+
+12:40:56.501 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODg1NX0.4d_xxF7vZyInLkGz35kknD-IJllcd278UARwZsV_JcQ"
+}
+ 
+12:40:56.509 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODg1NX0.4d_xxF7vZyInLkGz35kknD-IJllcd278UARwZsV_JcQ
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:40:56.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 482
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:40:55 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:40:57.001 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:43
+* match response ==
+"""
+[
+{
+"id": '#number',
+"productId": '#number',
+"price": '#string',
+"quantity": '#number',
+"buyerId":'#number'1,
+"productName": '#string',
+"productImageUrl": '#string'
+}
+]
+"""
+net.minidev.json.parser.ParseException: Unexpected token 1 at position 106.
+classpath:features/SchemaValidation.feature:43
+12:42:37.864 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:42:38.683 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:42:39.050 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:42:39.714 [main] DEBUG com.intuit.karate - response time in milliseconds: 660
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:42:38 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-XnBGFvtxtPnjJMG8C1FfWJdgbOM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODk1OH0.DJQR4CLX1OleVf_WpcMvCMMFGxKc0SdkGJ3Vdx_CGrI"}
+
+12:42:39.723 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODk1OH0.DJQR4CLX1OleVf_WpcMvCMMFGxKc0SdkGJ3Vdx_CGrI"
+}
+ 
+12:42:39.730 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0ODk1OH0.DJQR4CLX1OleVf_WpcMvCMMFGxKc0SdkGJ3Vdx_CGrI
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:42:39.953 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:42:38 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:42:39.966 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:43
+* match response[0] ==
+"""
+{
+      "id": '#number',
+      "productId": '#number',
+      "price": '#string',
+      "quantity": '#number',
+      "buyerId":'#number'1,
+      "productName": '#string',
+      "productImageUrl": '#string'
+      }
+"""
+net.minidev.json.parser.ParseException: Unexpected token 1 at position 134.
+classpath:features/SchemaValidation.feature:43
+12:43:35.259 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:43:36.056 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:43:36.453 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:43:37.008 [main] DEBUG com.intuit.karate - response time in milliseconds: 553
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:43:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-hHZKGMziewB6WrHvQYPv014U/TQ"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTAxNX0.mBAoOQ1xgX3W-B633Of-n8a7ymlbs_0CRrP_jf9XUrE"}
+
+12:43:37.016 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTAxNX0.mBAoOQ1xgX3W-B633Of-n8a7ymlbs_0CRrP_jf9XUrE"
+}
+ 
+12:43:37.025 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTAxNX0.mBAoOQ1xgX3W-B633Of-n8a7ymlbs_0CRrP_jf9XUrE
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:43:37.231 [main] DEBUG com.intuit.karate - response time in milliseconds: 206
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:43:35 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:43:37.252 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:43
+* match response[0] ==
+"""
+{
+      "id": '#number',
+      "productId": '#number',
+      "price": '#string',
+      "quantity": '#number',
+      "buyerId":'#number',
+      "productName": '#string',
+      "productImageUrl": '#string'
+      }
+"""
+match failed: EQUALS
+  $ | not equal | match failed for name: 'price' (MAP:MAP)
+  {"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"}
+  {"id":"#number","productId":"#number","price":"#string","quantity":"#number","buyerId":"#number","productName":"#string","productImageUrl":"#string"}
+
+    $.price | not a string (NUMBER:STRING)
+    4498
+    '#string'
+
+classpath:features/SchemaValidation.feature:43
+12:44:02.057 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:02.871 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:03.254 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:44:03.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:02 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-aHh7TJMcYrIIyYaQLutokBoJEf4"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA0Mn0.XIsxJ0WTQh19ni4O1tz8Gao75faGun5UPbY7PJNIyjk"}
+
+12:44:03.841 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA0Mn0.XIsxJ0WTQh19ni4O1tz8Gao75faGun5UPbY7PJNIyjk"
+}
+ 
+12:44:03.848 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA0Mn0.XIsxJ0WTQh19ni4O1tz8Gao75faGun5UPbY7PJNIyjk
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:04.186 [main] DEBUG com.intuit.karate - response time in milliseconds: 337
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:02 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:44:04.208 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:59
+* match responseTime < 500
+no step-definition method match found for: match responseTime < 500
+classpath:features/SchemaValidation.feature:59
+12:44:39.611 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:40.407 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:40.796 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:44:41.366 [main] DEBUG com.intuit.karate - response time in milliseconds: 566
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:40 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-MMh8oLZzEIsqJ3YbbWJchGbuOdM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA4MH0.4DXglnB1PIUuHZdmsajOcjbJ8QcJXq2fJ53ZYtXFEgY"}
+
+12:44:41.381 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA4MH0.4DXglnB1PIUuHZdmsajOcjbJ8QcJXq2fJ53ZYtXFEgY"
+}
+ 
+12:44:41.399 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA4MH0.4DXglnB1PIUuHZdmsajOcjbJ8QcJXq2fJ53ZYtXFEgY
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:41.620 [main] DEBUG com.intuit.karate - response time in milliseconds: 221
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:40 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:44:56.212 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:57.006 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:57.396 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:44:57.938 [main] DEBUG com.intuit.karate - response time in milliseconds: 540
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:56 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-K27C1DYNGN6CMUIKTmPS0GJHT14"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA5Nn0.Czvuk4dqdp_gL1iNI8m0ST7oOQTu-NLIx2j8GV2yiMs"}
+
+12:44:57.948 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA5Nn0.Czvuk4dqdp_gL1iNI8m0ST7oOQTu-NLIx2j8GV2yiMs"
+}
+ 
+12:44:57.955 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTA5Nn0.Czvuk4dqdp_gL1iNI8m0ST7oOQTu-NLIx2j8GV2yiMs
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:44:58.151 [main] DEBUG com.intuit.karate - response time in milliseconds: 196
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:44:56 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:44:58.172 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:43
+* match response ==
+"""
+[
+{
+"id": '#number',
+"productId": '#number',
+"price": '#number',
+"quantity": '#number',
+"buyerId":'#number',
+"productName": '#string',
+"productImageUrl": '#string'
+}
+]
+"""
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 5:1 (LIST:LIST)
+  [{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+  [{"id":"#number","productId":"#number","price":"#number","quantity":"#number","buyerId":"#number","productName":"#string","productImageUrl":"#string"}]
+
+
+classpath:features/SchemaValidation.feature:43
+12:45:31.042 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:45:31.840 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:45:32.217 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:45:32.759 [main] DEBUG com.intuit.karate - response time in milliseconds: 539
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:45:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-oulSqlaRF+0bTg6ltWMRKevMvi8"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTEzMX0.HtGACfhwlICDXOL6rqJ79glw6U7N5UFUdREj_Vtz9gY"}
+
+12:45:32.769 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTEzMX0.HtGACfhwlICDXOL6rqJ79glw6U7N5UFUdREj_Vtz9gY"
+}
+ 
+12:45:32.781 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTEzMX0.HtGACfhwlICDXOL6rqJ79glw6U7N5UFUdREj_Vtz9gY
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:45:32.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:45:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:57:27.323 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:57:28.031 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:57:28.395 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:57:29.377 [main] DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:57:27 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-r64/qv300TQjY6xVUZ775O6sZCY"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg0N30.c2uWzoSYSh0Qln3iVIvUsFK9l2XuHOlGLgECICwVovU"}
+
+12:57:29.385 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg0N30.c2uWzoSYSh0Qln3iVIvUsFK9l2XuHOlGLgECICwVovU"
+}
+ 
+12:57:29.391 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg0N30.c2uWzoSYSh0Qln3iVIvUsFK9l2XuHOlGLgECICwVovU
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:57:29.771 [main] DEBUG com.intuit.karate - response time in milliseconds: 380
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:57:28 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+12:58:11.830 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:58:12.533 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:58:12.908 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+12:58:13.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 541
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:58:12 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-f1H5htYOtzT9sGbB/9Rn+aiofFI"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg5Mn0.2QaHdZoLW6IHxZspy6cD5wr9cgwUhcS6-wZqBe0eNMo"}
+
+12:58:13.475 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg5Mn0.2QaHdZoLW6IHxZspy6cD5wr9cgwUhcS6-wZqBe0eNMo"
+}
+ 
+12:58:13.487 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg0OTg5Mn0.2QaHdZoLW6IHxZspy6cD5wr9cgwUhcS6-wZqBe0eNMo
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:58:13.696 [main] DEBUG com.intuit.karate - response time in milliseconds: 209
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 16:58:12 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+12:58:13.703 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+13:08:58.156 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:08:58.947 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:08:59.335 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:09:02.195 [main] DEBUG com.intuit.karate - response time in milliseconds: 2857
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:09:00 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-KhIXaZIdh+GAUqYzlUK9a9+VSaU"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU0MH0.M9cO5itwyvU4i2S24OLqRz5yKl_hmDXXeTGk5wtWaoc"}
+
+13:09:02.206 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU0MH0.M9cO5itwyvU4i2S24OLqRz5yKl_hmDXXeTGk5wtWaoc"
+}
+ 
+13:09:02.212 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU0MH0.M9cO5itwyvU4i2S24OLqRz5yKl_hmDXXeTGk5wtWaoc
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:09:02.426 [main] DEBUG com.intuit.karate - response time in milliseconds: 214
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:09:01 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+13:09:02.431 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+13:09:15.466 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:09:16.198 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:09:16.568 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:09:17.058 [main] DEBUG com.intuit.karate - response time in milliseconds: 487
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:09:15 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-VcpnUXA3yqnLJtXxQltaKHLTHrM"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU1NX0.F2m38kBAmPQVODPDfA1feNKKykbrCKycIcg9AYlRF7k"}
+
+13:09:17.067 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU1NX0.F2m38kBAmPQVODPDfA1feNKKykbrCKycIcg9AYlRF7k"
+}
+ 
+13:09:17.075 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDU1NX0.F2m38kBAmPQVODPDfA1feNKKykbrCKycIcg9AYlRF7k
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:09:17.305 [main] DEBUG com.intuit.karate - response time in milliseconds: 230
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:09:16 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+13:14:07.907 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:14:08.618 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:09.037 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:14:09.744 [main] DEBUG com.intuit.karate - response time in milliseconds: 703
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:08 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-2O0fygGrb1bkjv7bEgHr8F0ZQhA"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg0OH0.EObBLW3feBvzqPYhVYi5HsbZEWjazFZPP_vVHPmgewI"}
+
+13:14:09.755 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg0OH0.EObBLW3feBvzqPYhVYi5HsbZEWjazFZPP_vVHPmgewI"
+}
+ 
+13:14:09.762 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/payment
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg0OH0.EObBLW3feBvzqPYhVYi5HsbZEWjazFZPP_vVHPmgewI
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:14:09.992 [main] DEBUG com.intuit.karate - response time in milliseconds: 230
+1 < 200
+1 < Content-Length: 965
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:08 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"3c5-PwkTDLP+Cg53O53ju/nwRYyg0ts"
+1 < X-Powered-By: Express
+[{"id":5304,"cardNumber":"9876543211234567","nameOnCard":"JanJan","expirationMonth":10,"expirationYear":2026,"securityCode":987,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:50.000Z","updatedAt":"2023-03-23T16:38:50.000Z"},{"id":5337,"cardNumber":"1234567891234567","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:27:13.000Z","updatedAt":"2023-03-24T17:27:13.000Z"},{"id":5339,"cardNumber":"1234567891234568","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:38:56.000Z","updatedAt":"2023-03-24T17:38:56.000Z"},{"id":5340,"cardNumber":"1234567891234569","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:49:24.000Z","updatedAt":"2023-03-24T17:49:24.000Z"}]
+
+13:14:10.020 [main] ERROR com.intuit.karate - classpath:features/SchemaValidation.feature:84
+* assert resonseTime < 300
+js failed:
+>>>>
+01: resonseTime < 300
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "resonseTime" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:features/SchemaValidation.feature:84
+13:14:31.299 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:14:32.036 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:32.396 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:14:32.952 [main] DEBUG com.intuit.karate - response time in milliseconds: 552
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-J+JM5aH6gTFa2FxqIAjK0PhbLto"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg3MX0.EqN1j1U35oxRy5NFIMpEzswvM1-LIbxd--QiuKM-Iw8"}
+
+13:14:32.966 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg3MX0.EqN1j1U35oxRy5NFIMpEzswvM1-LIbxd--QiuKM-Iw8"
+}
+ 
+13:14:32.978 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/payment
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg3MX0.EqN1j1U35oxRy5NFIMpEzswvM1-LIbxd--QiuKM-Iw8
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:14:33.197 [main] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 200
+1 < Content-Length: 965
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:31 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"3c5-PwkTDLP+Cg53O53ju/nwRYyg0ts"
+1 < X-Powered-By: Express
+[{"id":5304,"cardNumber":"9876543211234567","nameOnCard":"JanJan","expirationMonth":10,"expirationYear":2026,"securityCode":987,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:50.000Z","updatedAt":"2023-03-23T16:38:50.000Z"},{"id":5337,"cardNumber":"1234567891234567","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:27:13.000Z","updatedAt":"2023-03-24T17:27:13.000Z"},{"id":5339,"cardNumber":"1234567891234568","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:38:56.000Z","updatedAt":"2023-03-24T17:38:56.000Z"},{"id":5340,"cardNumber":"1234567891234569","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:49:24.000Z","updatedAt":"2023-03-24T17:49:24.000Z"}]
+
+13:14:51.162 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:14:51.901 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:52.250 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:14:52.757 [main] DEBUG com.intuit.karate - response time in milliseconds: 503
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:51 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-uwqtr86zk6qvIDzp05bLRdA52fQ"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU"}
+
+13:14:52.768 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU"
+}
+ 
+13:14:52.779 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/address
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:14:53.007 [main] DEBUG com.intuit.karate - response time in milliseconds: 226
+1 < 200
+1 < Content-Length: 1981
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:51 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw"
+1 < X-Powered-By: Express
+[{"id":4638,"country":"United States","fullName":"John Wick","phoneNumber":"0787931984","street":"vegas","apartment":"123","city":"New York","state":"CA","zipCode":23465,"userId":4000,"isDeleted":false,"createdAt":"2023-03-13T23:46:57.000Z","updatedAt":"2023-03-13T23:46:57.000Z"},{"id":4948,"country":"United States","fullName":"general","phoneNumber":"0787931234","street":"123","apartment":"123","city":"Las Vegas","state":"CA","zipCode":0,"userId":4000,"isDeleted":false,"createdAt":"2023-03-17T00:24:09.000Z","updatedAt":"2023-03-17T00:24:09.000Z"},{"id":5457,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:49.000Z","updatedAt":"2023-03-23T16:38:49.000Z"},{"id":5458,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:42:13.000Z","updatedAt":"2023-03-23T16:42:13.000Z"},{"id":5459,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:45:05.000Z","updatedAt":"2023-03-23T16:45:05.000Z"},{"id":5460,"country":"United States","fullName":"JanJan","phoneNumber":"123123123123","street":"8642aaa","apartment":"12aaa","city":"New York","state":"Idaho","zipCode":22356,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:48:16.000Z","updatedAt":"2023-03-23T16:48:16.000Z"},{"id":5566,"country":"Dubai","fullName":"DubaiDubai","phoneNumber":"98765432112","street":"123Hello","apartment":"123","city":"Tysons","state":"California","zipCode":45678,"userId":4000,"isDeleted":false,"createdAt":"2023-03-25T15:10:35.000Z","updatedAt":"2023-03-25T15:10:36.000Z"}]
+
+13:14:53.013 [main] INFO  com.intuit.karate - [print] [
+  {
+    "id": 4638,
+    "country": "United States",
+    "fullName": "John Wick",
+    "phoneNumber": "0787931984",
+    "street": "vegas",
+    "apartment": "123",
+    "city": "New York",
+    "state": "CA",
+    "zipCode": 23465,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-13T23:46:57.000Z",
+    "updatedAt": "2023-03-13T23:46:57.000Z"
+  },
+  {
+    "id": 4948,
+    "country": "United States",
+    "fullName": "general",
+    "phoneNumber": "0787931234",
+    "street": "123",
+    "apartment": "123",
+    "city": "Las Vegas",
+    "state": "CA",
+    "zipCode": 0,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-17T00:24:09.000Z",
+    "updatedAt": "2023-03-17T00:24:09.000Z"
+  },
+  {
+    "id": 5457,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:38:49.000Z",
+    "updatedAt": "2023-03-23T16:38:49.000Z"
+  },
+  {
+    "id": 5458,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:42:13.000Z",
+    "updatedAt": "2023-03-23T16:42:13.000Z"
+  },
+  {
+    "id": 5459,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:45:05.000Z",
+    "updatedAt": "2023-03-23T16:45:05.000Z"
+  },
+  {
+    "id": 5460,
+    "country": "United States",
+    "fullName": "JanJan",
+    "phoneNumber": "123123123123",
+    "street": "8642aaa",
+    "apartment": "12aaa",
+    "city": "New York",
+    "state": "Idaho",
+    "zipCode": 22356,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-23T16:48:16.000Z",
+    "updatedAt": "2023-03-23T16:48:16.000Z"
+  },
+  {
+    "id": 5566,
+    "country": "Dubai",
+    "fullName": "DubaiDubai",
+    "phoneNumber": "98765432112",
+    "street": "123Hello",
+    "apartment": "123",
+    "city": "Tysons",
+    "state": "California",
+    "zipCode": 45678,
+    "userId": 4000,
+    "isDeleted": false,
+    "createdAt": "2023-03-25T15:10:35.000Z",
+    "updatedAt": "2023-03-25T15:10:36.000Z"
+  }
+]
+ 
+13:14:53.055 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:53.071 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:14:53.392 [main] DEBUG com.intuit.karate - response time in milliseconds: 320
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-YmFNfzSZD5OzZv4pKRV98PZ/uek"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs"}
+
+13:14:53.396 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs"
+}
+ 
+13:14:53.408 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:14:53.613 [main] DEBUG com.intuit.karate - response time in milliseconds: 204
+1 < 200
+1 < Content-Length: 771
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"303-tXub+cs1KtvEMmO13xflf01qoic"
+1 < X-Powered-By: Express
+[{"id":5545,"productId":7,"price":4498,"quantity":3,"buyerId":3862,"productName":"Sony HD TV ","productImageUrl":"/images/products/6_7.jpg"},{"id":5546,"productId":9,"price":129,"quantity":3,"buyerId":3862,"productName":"Toshiba V35 Series Smart Fire TV ","productImageUrl":"/images/products/6_9.jpg"},{"id":5547,"productId":12,"price":39.99,"quantity":3,"buyerId":3862,"productName":"Teenage Mutant Ninja Turtles Cowabunga Collection NSW","productImageUrl":"/images/products/7_2.jpg"},{"id":5599,"productId":6,"price":699,"quantity":3,"buyerId":3862,"productName":"Amazon Fire TV ","productImageUrl":"/images/products/6_6.jpg"},{"id":5601,"productId":14,"price":500,"quantity":3,"buyerId":3862,"productName":"Xbox Series X","productImageUrl":"/images/products/7_4.jpg"}]
+
+13:14:53.631 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:53.641 [main] DEBUG com.intuit.karate - request:
+1 > POST https://tek-retail-api.azurewebsites.net/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 59
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"tester1234@outlook.com","password":"1234@Tester"}
+
+13:14:53.941 [main] DEBUG com.intuit.karate - response time in milliseconds: 299
+1 < 200
+1 < Content-Length: 422
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"1a6-YmFNfzSZD5OzZv4pKRV98PZ/uek"
+1 < X-Powered-By: Express
+{"name":"sdetTester","email":"tester1234@outlook.com","userId":4000,"role":"customer","roleId":3862,"phoneNumber":"012345678919","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs"}
+
+13:14:53.944 [main] INFO  com.intuit.karate - [print] {
+  "name": "sdetTester",
+  "email": "tester1234@outlook.com",
+  "userId": 4000,
+  "role": "customer",
+  "roleId": 3862,
+  "phoneNumber": "012345678919",
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs"
+}
+ 
+13:14:53.952 [main] DEBUG com.intuit.karate - request:
+1 > GET https://tek-retail-api.azurewebsites.net/payment
+1 > x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs
+1 > Host: tek-retail-api.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:14:54.164 [main] DEBUG com.intuit.karate - response time in milliseconds: 211
+1 < 200
+1 < Content-Length: 965
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"3c5-PwkTDLP+Cg53O53ju/nwRYyg0ts"
+1 < X-Powered-By: Express
+[{"id":5304,"cardNumber":"9876543211234567","nameOnCard":"JanJan","expirationMonth":10,"expirationYear":2026,"securityCode":987,"userId":4000,"isDeleted":false,"createdAt":"2023-03-23T16:38:50.000Z","updatedAt":"2023-03-23T16:38:50.000Z"},{"id":5337,"cardNumber":"1234567891234567","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:27:13.000Z","updatedAt":"2023-03-24T17:27:13.000Z"},{"id":5339,"cardNumber":"1234567891234568","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:38:56.000Z","updatedAt":"2023-03-24T17:38:56.000Z"},{"id":5340,"cardNumber":"1234567891234569","nameOnCard":"JohnTester","expirationMonth":12,"expirationYear":2025,"securityCode":123,"userId":4000,"isDeleted":false,"createdAt":"2023-03-24T17:49:24.000Z","updatedAt":"2023-03-24T17:49:24.000Z"}]
+

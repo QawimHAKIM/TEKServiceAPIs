@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("5fcaa490-b209-4dcc-9182-530e37143a7f",{name:"Qawim"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.SchemaValidation</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-03-26 01:14:54 p.m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Address API Schema Validation</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:40]"><span>[2:40]</span> <span>Shopping Cart API Schema Validation</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:63]"><span>[3:63]</span> <span>Payment API Schema Validation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/SchemaValidation.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">TEK Retail API Schema Validation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">schema</a><a class="badge badge-primary" href="karate-tags.html">addressSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Address API Schema Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1112</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:14:51.902 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = call read(&quot;TokenGenerator.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">846</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.TokenGenerator</div>
+      </div>
+      <div class="time-cell passed">833</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">794</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">13:14:52.250 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}
+
+13:14:52.757 response time in milliseconds: 503
+1 &lt; 200
+1 &lt; Content-Length: 422
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:51 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1a6-uwqtr86zk6qvIDzp05bLRdA52fQ&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;sdetTester&quot;,&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;userId&quot;:4000,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:3862,&quot;phoneNumber&quot;:&quot;012345678919&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">13:14:52.770 [print] {
+  &quot;name&quot;: &quot;sdetTester&quot;,
+  &quot;email&quot;: &quot;tester1234@outlook.com&quot;,
+  &quot;userId&quot;: 4000,
+  &quot;role&quot;: &quot;customer&quot;,
+  &quot;roleId&quot;: 3862,
+  &quot;phoneNumber&quot;: &quot;012345678919&quot;,
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenValue.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = tokenValue.response.roleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/address&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">234</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">13:14:52.780 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/address
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5MX0.AU1xUouCQcxkSim7ypM1-ryG9ZaphmufIa_CqNlojFU
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:14:53.007 response time in milliseconds: 226
+1 &lt; 200
+1 &lt; Content-Length: 1981
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:51 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;7bd-ylzstU0OUa2cvfufbUuNM1ZYDUw&quot;
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:4638,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;John Wick&quot;,&quot;phoneNumber&quot;:&quot;0787931984&quot;,&quot;street&quot;:&quot;vegas&quot;,&quot;apartment&quot;:&quot;123&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zipCode&quot;:23465,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-13T23:46:57.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-13T23:46:57.000Z&quot;},{&quot;id&quot;:4948,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;general&quot;,&quot;phoneNumber&quot;:&quot;0787931234&quot;,&quot;street&quot;:&quot;123&quot;,&quot;apartment&quot;:&quot;123&quot;,&quot;city&quot;:&quot;Las Vegas&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zipCode&quot;:0,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-17T00:24:09.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-17T00:24:09.000Z&quot;},{&quot;id&quot;:5457,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;JanJan&quot;,&quot;phoneNumber&quot;:&quot;123123123123&quot;,&quot;street&quot;:&quot;8642aaa&quot;,&quot;apartment&quot;:&quot;12aaa&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:22356,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-23T16:38:49.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-23T16:38:49.000Z&quot;},{&quot;id&quot;:5458,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;JanJan&quot;,&quot;phoneNumber&quot;:&quot;123123123123&quot;,&quot;street&quot;:&quot;8642aaa&quot;,&quot;apartment&quot;:&quot;12aaa&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:22356,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-23T16:42:13.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-23T16:42:13.000Z&quot;},{&quot;id&quot;:5459,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;JanJan&quot;,&quot;phoneNumber&quot;:&quot;123123123123&quot;,&quot;street&quot;:&quot;8642aaa&quot;,&quot;apartment&quot;:&quot;12aaa&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:22356,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-23T16:45:05.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-23T16:45:05.000Z&quot;},{&quot;id&quot;:5460,&quot;country&quot;:&quot;United States&quot;,&quot;fullName&quot;:&quot;JanJan&quot;,&quot;phoneNumber&quot;:&quot;123123123123&quot;,&quot;street&quot;:&quot;8642aaa&quot;,&quot;apartment&quot;:&quot;12aaa&quot;,&quot;city&quot;:&quot;New York&quot;,&quot;state&quot;:&quot;Idaho&quot;,&quot;zipCode&quot;:22356,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-23T16:48:16.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-23T16:48:16.000Z&quot;},{&quot;id&quot;:5566,&quot;country&quot;:&quot;Dubai&quot;,&quot;fullName&quot;:&quot;DubaiDubai&quot;,&quot;phoneNumber&quot;:&quot;98765432112&quot;,&quot;street&quot;:&quot;123Hello&quot;,&quot;apartment&quot;:&quot;123&quot;,&quot;city&quot;:&quot;Tysons&quot;,&quot;state&quot;:&quot;California&quot;,&quot;zipCode&quot;:45678,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-25T15:10:35.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-25T15:10:36.000Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">13:14:53.015 [print] [
+  {
+    &quot;id&quot;: 4638,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;John Wick&quot;,
+    &quot;phoneNumber&quot;: &quot;0787931984&quot;,
+    &quot;street&quot;: &quot;vegas&quot;,
+    &quot;apartment&quot;: &quot;123&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;CA&quot;,
+    &quot;zipCode&quot;: 23465,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-13T23:46:57.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-13T23:46:57.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 4948,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;general&quot;,
+    &quot;phoneNumber&quot;: &quot;0787931234&quot;,
+    &quot;street&quot;: &quot;123&quot;,
+    &quot;apartment&quot;: &quot;123&quot;,
+    &quot;city&quot;: &quot;Las Vegas&quot;,
+    &quot;state&quot;: &quot;CA&quot;,
+    &quot;zipCode&quot;: 0,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-17T00:24:09.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-17T00:24:09.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 5457,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;JanJan&quot;,
+    &quot;phoneNumber&quot;: &quot;123123123123&quot;,
+    &quot;street&quot;: &quot;8642aaa&quot;,
+    &quot;apartment&quot;: &quot;12aaa&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;Idaho&quot;,
+    &quot;zipCode&quot;: 22356,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-23T16:38:49.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-23T16:38:49.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 5458,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;JanJan&quot;,
+    &quot;phoneNumber&quot;: &quot;123123123123&quot;,
+    &quot;street&quot;: &quot;8642aaa&quot;,
+    &quot;apartment&quot;: &quot;12aaa&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;Idaho&quot;,
+    &quot;zipCode&quot;: 22356,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-23T16:42:13.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-23T16:42:13.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 5459,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;JanJan&quot;,
+    &quot;phoneNumber&quot;: &quot;123123123123&quot;,
+    &quot;street&quot;: &quot;8642aaa&quot;,
+    &quot;apartment&quot;: &quot;12aaa&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;Idaho&quot;,
+    &quot;zipCode&quot;: 22356,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-23T16:45:05.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-23T16:45:05.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 5460,
+    &quot;country&quot;: &quot;United States&quot;,
+    &quot;fullName&quot;: &quot;JanJan&quot;,
+    &quot;phoneNumber&quot;: &quot;123123123123&quot;,
+    &quot;street&quot;: &quot;8642aaa&quot;,
+    &quot;apartment&quot;: &quot;12aaa&quot;,
+    &quot;city&quot;: &quot;New York&quot;,
+    &quot;state&quot;: &quot;Idaho&quot;,
+    &quot;zipCode&quot;: 22356,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-23T16:48:16.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-23T16:48:16.000Z&quot;
+  },
+  {
+    &quot;id&quot;: 5566,
+    &quot;country&quot;: &quot;Dubai&quot;,
+    &quot;fullName&quot;: &quot;DubaiDubai&quot;,
+    &quot;phoneNumber&quot;: &quot;98765432112&quot;,
+    &quot;street&quot;: &quot;123Hello&quot;,
+    &quot;apartment&quot;: &quot;123&quot;,
+    &quot;city&quot;: &quot;Tysons&quot;,
+    &quot;state&quot;: &quot;California&quot;,
+    &quot;zipCode&quot;: 45678,
+    &quot;userId&quot;: 4000,
+    &quot;isDeleted&quot;: false,
+    &quot;createdAt&quot;: &quot;2023-03-25T15:10:35.000Z&quot;,
+    &quot;updatedAt&quot;: &quot;2023-03-25T15:10:36.000Z&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response contains any</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.16">[
+{
+    &quot;id&quot;: &#39;#number&#39;,
+    &quot;country&quot;: &#39;#string&#39;,
+    &quot;fullName&quot;: &#39;#string&#39;,
+    &quot;phoneNumber&quot;: &#39;#string&#39;,
+    &quot;street&quot;: &#39;#string&#39;,
+    &quot;apartment&quot;: &#39;#string&#39;,
+    &quot;city&quot;: &#39;#string&#39;,
+    &quot;state&quot;: &#39;#string&#39;,
+    &quot;zipCode&quot;: &#39;#number&#39;,
+    &quot;userId&quot;: &#39;#number&#39;,
+    &quot;isDeleted&quot;: &#39;#present&#39;,
+    &quot;createdAt&quot;: &#39;#present&#39;,
+    &quot;updatedAt&quot;: &#39;#present&#39;
+  }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 1000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">schema</a><a class="badge badge-primary" href="karate-tags.html">shoppingSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:40]</span>
+                <span class="scenario-name">Shopping Cart API Schema Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>561</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:14:53.056 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = call read(&quot;TokenGenerator.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.TokenGenerator</div>
+      </div>
+      <div class="time-cell passed">327</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">325</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">13:14:53.071 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}
+
+13:14:53.392 response time in milliseconds: 320
+1 &lt; 200
+1 &lt; Content-Length: 422
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1a6-YmFNfzSZD5OzZv4pKRV98PZ/uek&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;sdetTester&quot;,&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;userId&quot;:4000,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:3862,&quot;phoneNumber&quot;:&quot;012345678919&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">13:14:53.396 [print] {
+  &quot;name&quot;: &quot;sdetTester&quot;,
+  &quot;email&quot;: &quot;tester1234@outlook.com&quot;,
+  &quot;userId&quot;: 4000,
+  &quot;role&quot;: &quot;customer&quot;,
+  &quot;roleId&quot;: 3862,
+  &quot;phoneNumber&quot;: &quot;012345678919&quot;,
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenValue.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = tokenValue.response.roleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/shopping-cart&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>param buyerId = id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">213</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">13:14:53.408 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/shopping-cart?buyerId=3862
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:14:53.613 response time in milliseconds: 204
+1 &lt; 200
+1 &lt; Content-Length: 771
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;303-tXub+cs1KtvEMmO13xflf01qoic&quot;
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:5545,&quot;productId&quot;:7,&quot;price&quot;:4498,&quot;quantity&quot;:3,&quot;buyerId&quot;:3862,&quot;productName&quot;:&quot;Sony HD TV &quot;,&quot;productImageUrl&quot;:&quot;/images/products/6_7.jpg&quot;},{&quot;id&quot;:5546,&quot;productId&quot;:9,&quot;price&quot;:129,&quot;quantity&quot;:3,&quot;buyerId&quot;:3862,&quot;productName&quot;:&quot;Toshiba V35 Series Smart Fire TV &quot;,&quot;productImageUrl&quot;:&quot;/images/products/6_9.jpg&quot;},{&quot;id&quot;:5547,&quot;productId&quot;:12,&quot;price&quot;:39.99,&quot;quantity&quot;:3,&quot;buyerId&quot;:3862,&quot;productName&quot;:&quot;Teenage Mutant Ninja Turtles Cowabunga Collection NSW&quot;,&quot;productImageUrl&quot;:&quot;/images/products/7_2.jpg&quot;},{&quot;id&quot;:5599,&quot;productId&quot;:6,&quot;price&quot;:699,&quot;quantity&quot;:3,&quot;buyerId&quot;:3862,&quot;productName&quot;:&quot;Amazon Fire TV &quot;,&quot;productImageUrl&quot;:&quot;/images/products/6_6.jpg&quot;},{&quot;id&quot;:5601,&quot;productId&quot;:14,&quot;price&quot;:500,&quot;quantity&quot;:3,&quot;buyerId&quot;:3862,&quot;productName&quot;:&quot;Xbox Series X&quot;,&quot;productImageUrl&quot;:&quot;/images/products/7_4.jpg&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response contains any</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.44">[
+{
+&quot;id&quot;: &#39;#number&#39;,
+&quot;productId&quot;: &#39;#number&#39;,
+&quot;price&quot;: &#39;#number&#39;,
+&quot;quantity&quot;: &#39;#number&#39;,
+&quot;buyerId&quot;:&#39;#number&#39;,
+&quot;productName&quot;: &#39;#string&#39;,
+&quot;productImageUrl&quot;: &#39;#string&#39;
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:63]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">schema</a><a class="badge badge-primary" href="karate-tags.html">paymentSchema</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:63]</span>
+                <span class="scenario-name">Payment API Schema Validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>540</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:63]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:14:53.631 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenValue = call read(&quot;TokenGenerator.feature&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">314</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.TokenGenerator</div>
+      </div>
+      <div class="time-cell passed">305</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/auth/login&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request {&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">303</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">13:14:53.641 request:
+1 &gt; POST https://tek-retail-api.azurewebsites.net/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;password&quot;:&quot;1234@Tester&quot;}
+
+13:14:53.941 response time in milliseconds: 299
+1 &lt; 200
+1 &lt; Content-Length: 422
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;1a6-YmFNfzSZD5OzZv4pKRV98PZ/uek&quot;
+1 &lt; X-Powered-By: Express
+{&quot;name&quot;:&quot;sdetTester&quot;,&quot;email&quot;:&quot;tester1234@outlook.com&quot;,&quot;userId&quot;:4000,&quot;role&quot;:&quot;customer&quot;,&quot;roleId&quot;:3862,&quot;phoneNumber&quot;:&quot;012345678919&quot;,&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">13:14:53.945 [print] {
+  &quot;name&quot;: &quot;sdetTester&quot;,
+  &quot;email&quot;: &quot;tester1234@outlook.com&quot;,
+  &quot;userId&quot;: 4000,
+  &quot;role&quot;: &quot;customer&quot;,
+  &quot;roleId&quot;: 3862,
+  &quot;phoneNumber&quot;: &quot;012345678919&quot;,
+  &quot;accessToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = tokenValue.response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def id = tokenValue.response.roleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:63]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header x-access-token = token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/payment&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">217</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.65">13:14:53.953 request:
+1 &gt; GET https://tek-retail-api.azurewebsites.net/payment
+1 &gt; x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2RldFRlc3RlciIsImVtYWlsIjoidGVzdGVyMTIzNEBvdXRsb29rLmNvbSIsInVzZXJJZCI6NDAwMCwicm9sZSI6ImN1c3RvbWVyIiwicm9sZUlkIjozODYyLCJwaG9uZU51bWJlciI6IjAxMjM0NTY3ODkxOSIsImlhdCI6MTY3OTg1MDg5Mn0.o4dGriGMV8M6XfqwN3ktGF5yoFjZ_I0F1rWLV7iunfs
+1 &gt; Host: tek-retail-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.15.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:14:54.164 response time in milliseconds: 211
+1 &lt; 200
+1 &lt; Content-Length: 965
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 26 Mar 2023 17:14:52 GMT
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;3c5-PwkTDLP+Cg53O53ju/nwRYyg0ts&quot;
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:5304,&quot;cardNumber&quot;:&quot;9876543211234567&quot;,&quot;nameOnCard&quot;:&quot;JanJan&quot;,&quot;expirationMonth&quot;:10,&quot;expirationYear&quot;:2026,&quot;securityCode&quot;:987,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-23T16:38:50.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-23T16:38:50.000Z&quot;},{&quot;id&quot;:5337,&quot;cardNumber&quot;:&quot;1234567891234567&quot;,&quot;nameOnCard&quot;:&quot;JohnTester&quot;,&quot;expirationMonth&quot;:12,&quot;expirationYear&quot;:2025,&quot;securityCode&quot;:123,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-24T17:27:13.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-24T17:27:13.000Z&quot;},{&quot;id&quot;:5339,&quot;cardNumber&quot;:&quot;1234567891234568&quot;,&quot;nameOnCard&quot;:&quot;JohnTester&quot;,&quot;expirationMonth&quot;:12,&quot;expirationYear&quot;:2025,&quot;securityCode&quot;:123,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-24T17:38:56.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-24T17:38:56.000Z&quot;},{&quot;id&quot;:5340,&quot;cardNumber&quot;:&quot;1234567891234569&quot;,&quot;nameOnCard&quot;:&quot;JohnTester&quot;,&quot;expirationMonth&quot;:12,&quot;expirationYear&quot;:2025,&quot;securityCode&quot;:123,&quot;userId&quot;:4000,&quot;isDeleted&quot;:false,&quot;createdAt&quot;:&quot;2023-03-24T17:49:24.000Z&quot;,&quot;updatedAt&quot;:&quot;2023-03-24T17:49:24.000Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response contains any</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.66">[
+{
+&quot;id&quot;: &#39;#number&#39;,
+&quot;cardNumber&quot;: &#39;#string&#39;,
+&quot;nameOnCard&quot;: &#39;#string&#39;,
+&quot;expirationMonth&quot;: &#39;#number&#39;,
+&quot;expirationYear&quot;: &#39;#number&#39;,
+&quot;securityCode&quot;: &#39;#number&#39;,
+&quot;userId&quot;: &#39;#number&#39;,
+&quot;isDeleted&quot;: &#39;#present&#39;,
+&quot;createdAt&quot;: &#39;#present&#39;,
+&quot;updatedAt&quot;: &#39;#present&#39;
+}
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseType == &#39;json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseType != &#39;xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseTime &lt; 300</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
